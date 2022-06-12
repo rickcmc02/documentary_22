@@ -1,24 +1,31 @@
-import logo from "assets/img/logo.svg";
+import { Route, Routes } from "react-router-dom";
+
+import { Grid } from "@mui/material";
+
 import "assets/css/App.css";
+import Header from "components/Header/Header";
+import Footer from "components/Footer/Footer";
+import Main from "views/Main/Main";
 
 function App() {
+  const headerHeight = 7;
+  const footerHeight = 20;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Grid className="App" sx={{ minHeight: "100vh" }}>
+      <Header height={headerHeight} />
+      <Grid
+        sx={{
+          minHeight: `calc(100vh - ${footerHeight * 8}px)`,
+          pt: headerHeight,
+        }}
+      >
+        <Routes>
+          <Route path="/" element={<Main />} />
+        </Routes>
+      </Grid>
+      <Footer height={footerHeight} />
+    </Grid>
   );
 }
 
