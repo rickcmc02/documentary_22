@@ -1,0 +1,13 @@
+:root[color-theme="light"] {
+  --winter1: #b5e5e7;
+  --winter2: #71c3db;
+  --winter3: #1cb3d2;
+  --winter4: #067a9f;
+  --winter5: #213b54;
+
+  --color1: var(--winter1);
+  --color2: var(--winter2);
+  --color3: var(--winter3);
+  --color4: var(--winter4);
+  --color5: var(--winter5);
+}

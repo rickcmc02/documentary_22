@@ -1,0 +1,49 @@
+@import url("./palette.css");
+
+.textColor1 {
+  color: var(--color1);
+}
+.textColor2 {
+  color: var(--color2);
+}
+.textColor3 {
+  color: var(--color3);
+}
+.textColor4 {
+  color: var(--color4);
+}
+.textColor5 {
+  color: var(--color5);
+}
+
+.backColor1 {
+  background-color: var(--color1);
+}
+.backColor2 {
+  background-color: var(--color2);
+}
+.backColor3 {
+  background-color: var(--color3);
+}
+.backColor4 {
+  background-color: var(--color4);
+}
+.backColor5 {
+  background-color: var(--color5);
+}
+
+.fillColor1 {
+  fill: var(--color1);
+}
+.fillColor2 {
+  fill: var(--color2);
+}
+.fillColor3 {
+  fill: var(--color3);
+}
+.fillColor4 {
+  fill: var(--color4);
+}
+.fillColor5 {
+  fill: var(--color5);
+}
