@@ -15,6 +15,36 @@
 .textColor5 {
   color: var(--color5);
 }
+.textBright0 {
+  color: var(--bright0);
+}
+.textBright1 {
+  color: var(--bright1);
+}
+.textBright2 {
+  color: var(--bright2);
+}
+.textBright3 {
+  color: var(--bright3);
+}
+.textBright4 {
+  color: var(--bright4);
+}
+.textBright5 {
+  color: var(--bright5);
+}
+.textBright6 {
+  color: var(--bright6);
+}
+.textBright7 {
+  color: var(--bright7);
+}
+.textBright8 {
+  color: var(--bright8);
+}
+.textBright9 {
+  color: var(--bright9);
+}
 
 .backColor1 {
   background-color: var(--color1);
@@ -30,6 +60,36 @@
 }
 .backColor5 {
   background-color: var(--color5);
+}
+.backBright0 {
+  background-color: var(--bright0);
+}
+.backBright1 {
+  background-color: var(--bright1);
+}
+.backBright2 {
+  background-color: var(--bright2);
+}
+.backBright3 {
+  background-color: var(--bright3);
+}
+.backBright4 {
+  background-color: var(--bright4);
+}
+.backBright5 {
+  background-color: var(--bright5);
+}
+.backBright6 {
+  background-color: var(--bright6);
+}
+.backBright7 {
+  background-color: var(--bright7);
+}
+.backBright8 {
+  background-color: var(--bright8);
+}
+.backBright9 {
+  background-color: var(--bright9);
 }
 
 .fillColor1 {
