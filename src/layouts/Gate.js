@@ -6,40 +6,33 @@ const Gate = () => {
 
   return (
     <Grid
-      className="backBright0"
+      className="backBright0 centerCenter"
       sx={{
         height: "100vh",
         width: "100vw",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
       }}
     >
       <Grid
+        className="centerCenter"
         sx={{
           border: "1px solid var(--bright2)",
           width: "50vmin",
           height: "50vmin",
+          maxWidth: "500px",
+          maxHeight: "500px",
           borderRadius: "25vmin",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
         }}
       >
         <Grid
-          className="backColor1 textBright9"
+          className="centerCenter backColor1 cursorPointer"
           sx={{
             width: "70%",
             height: "70%",
             borderRadius: "70%",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            cursor: "pointer",
           }}
           onClick={() => navigate("/main")}
         >
-          <div>썸네일</div>
+          <p className="textBright9">썸네일</p>
         </Grid>
       </Grid>
     </Grid>
