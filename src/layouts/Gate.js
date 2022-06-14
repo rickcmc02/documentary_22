@@ -1,10 +1,14 @@
 import { useNavigate } from "react-router-dom";
-import App from "./App";
+import { Grid } from "@mui/material";
 
 const Gate = () => {
   const navigate = useNavigate();
 
-  return <div onClick={() => navigate("/main")}>썸네일</div>;
+  return (
+    <Grid>
+      <div onClick={() => navigate("/main")}>썸네일</div>
+    </Grid>
+  );
 };
 
 export default Gate;
