@@ -15,7 +15,7 @@ const Gate = () => {
       <Grid
         className="centerCenter"
         sx={{
-          border: "1px solid var(--bright2)",
+          border: "1px solid var(--bright3)",
           width: "50vmin",
           height: "50vmin",
           maxWidth: "500px",
@@ -23,16 +23,13 @@ const Gate = () => {
           borderRadius: "25vmin",
         }}
       >
-        <Grid
-          className="centerCenter backColor1 cursorPointer"
-          sx={{
-            width: "70%",
-            height: "70%",
-            borderRadius: "70%",
-          }}
-          onClick={() => navigate("/main")}
-        >
-          <p className="textBright9">썸네일</p>
+        <Grid className="centerCenter thumbNailBack">
+          <Grid
+            className="centerCenter backColor2 cursorPointer thumbNailCover"
+            onClick={() => navigate("/main")}
+          >
+            <h3 className="textBright7">retriever Young</h3>
+          </Grid>
         </Grid>
       </Grid>
     </Grid>
