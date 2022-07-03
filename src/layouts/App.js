@@ -3,7 +3,6 @@ import { Route, Routes } from "react-router-dom";
 
 import { Grid } from "@mui/material";
 
-import "assets/css/App.css";
 import Header from "components/Header/Header";
 import Footer from "components/Footer/Footer";
 import Main from "views/Main/Main";
@@ -13,7 +12,7 @@ function App() {
   const footerHeight = 20;
 
   return (
-    <Grid className="App" sx={{ minHeight: "100vh" }}>
+    <Grid sx={{ minHeight: "100vh" }}>
       <Header height={headerHeight} />
       <Grid
         sx={{

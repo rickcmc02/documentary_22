@@ -14,3 +14,10 @@
 .thumbNailCover:hover {
   opacity: 0.2;
 }
+.thumbOrbit {
+  width: 50vmin;
+  height: 50vmin;
+  max-width: 500px;
+  max-height: 500px;
+  border-radius: 25vmin;
+}

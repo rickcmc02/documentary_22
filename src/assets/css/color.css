@@ -107,3 +107,62 @@
 .fillColor5 {
   fill: var(--color5);
 }
+
+.borderColor1 {
+  border: 1px solid var(--color1);
+}
+.borderColor2 {
+  border: 1px solid var(--color2);
+}
+.borderColor3 {
+  border: 1px solid var(--color3);
+}
+.borderColor4 {
+  border: 1px solid var(--color4);
+}
+.borderColor5 {
+  border: 1px solid var(--color5);
+}
+.borderBright1 {
+  border: 1px solid var(--bright1);
+}
+.borderBright2 {
+  border: 1px solid var(--bright2);
+}
+.borderBright3 {
+  border: 1px solid var(--bright3);
+}
+.borderBright4 {
+  border: 1px solid var(--bright4);
+}
+.borderBright5 {
+  border: 1px solid var(--bright5);
+}
+.borderBright6 {
+  border: 1px solid var(--bright6);
+}
+.borderBright7 {
+  border: 1px solid var(--bright7);
+}
+.borderBright8 {
+  border: 1px solid var(--bright8);
+}
+.borderBright9 {
+  border: 1px solid var(--bright9);
+}
+
+.borBottomColor1 {
+  border-bottom: 1px solid var(--color1);
+}
+.borBottomColor2 {
+  border-bottom: 1px solid var(--color2);
+}
+.borBottomColor3 {
+  border-bottom: 1px solid var(--color3);
+}
+.borBottomColor4 {
+  border-bottom: 1px solid var(--color4);
+}
+.borBottomColor5 {
+  border-bottom: 1px solid var(--color5);
+}
