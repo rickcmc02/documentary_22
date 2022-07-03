@@ -4,13 +4,13 @@
 @import url("./custom.css");
 
 @font-face {
-  font-family: "NotoSansKR";
+  font-family: "CustomSans";
   src: url("../font/notoSansKR/NotoSansKR-Regular.otf") format("otf");
   font-style: normal;
 }
 
 @font-face {
-  font-family: "NotoSansKR";
+  font-family: "CustomSans";
   src: url("../font/openSans/open-sans-regular.ttf") format("ttf");
   unicode-range: U+0020-007E;
   font-style: normal;
@@ -18,7 +18,7 @@
 
 body {
   margin: 0;
-  font-family: "NotoSansKR";
+  font-family: "CustomSans";
 }
 
 code {

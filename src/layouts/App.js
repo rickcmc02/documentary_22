@@ -12,7 +12,7 @@ function App() {
   const footerHeight = 20;
 
   return (
-    <Grid sx={{ minHeight: "100vh" }}>
+    <Grid className="backBright1" sx={{ minHeight: "100vh" }}>
       <Header height={headerHeight} />
       <Grid
         sx={{

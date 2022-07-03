@@ -12,13 +12,19 @@ const Gate = () => {
         width: "100vw",
       }}
     >
-      <Grid className="centerCenter borderBright4 thumbOrbit">
+      <Grid className="centerCenter borderBright3 thumbOrbit">
         <Grid className="centerCenter thumbNailBack">
           <Grid
-            className="centerCenter backColor2 cursorPointer thumbNailCover"
+            className="centerCenter backColor4 cursorPointer thumbNailCover"
             onClick={() => navigate("/main")}
           >
-            <h3 className="textBright7">retriever Young</h3>
+            Retriever Young
+            <Grid sx={{ mt: 1, mx: -3.25 }}>
+              <br />
+              <p style={{ fontWeight: "normal", fontSize: "15px" }}>
+                portfolio
+              </p>
+            </Grid>
           </Grid>
         </Grid>
       </Grid>

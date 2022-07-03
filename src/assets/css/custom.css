@@ -1,6 +1,6 @@
 .thumbNailBack {
-  width: 70%;
-  height: 70%;
+  width: 65%;
+  height: 65%;
   border-radius: 100%;
   background-image: url("/src/assets/img/profile_img.jpeg");
   background-size: cover;
@@ -10,14 +10,23 @@
   height: 100%;
   border-radius: 100%;
   z-index: 5;
+  box-shadow: var(--color4) 0px 0px 50px 0px;
+  color: var(--bright2);
+  font-size: 19px;
+  font-weight: 300;
+  transition: font-weight, font-size 0.4s ease 0s;
 }
 .thumbNailCover:hover {
-  opacity: 0.2;
+  opacity: 0.8;
+  font-size: 18px;
+  font-weight: 500;
 }
 .thumbOrbit {
-  width: 50vmin;
-  height: 50vmin;
+  width: 52vmin;
+  height: 52vmin;
   max-width: 500px;
   max-height: 500px;
-  border-radius: 25vmin;
+  min-width: 280px;
+  min-height: 280px;
+  border-radius: 50vmin;
 }
