@@ -18,6 +18,7 @@
 }
 .thumbNailCover:hover {
   opacity: 0.8;
+  color: var(--bright1);
   font-size: 18px;
   font-weight: 500;
 }
