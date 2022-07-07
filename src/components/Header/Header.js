@@ -1,23 +1,21 @@
 import { useState } from "react";
 
-import { Button, Grid } from "@mui/material";
+import { Button, Drawer, Grid } from "@mui/material";
 
 const Header = ({ height }) => {
-  const handleHeader = () => {};
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+  const toggleDrawer = () => {
+    setIsDrawerOpen(true);
+  };
 
   return (
     <header>
-      <Grid
-        className="fullWidth headerContainer"
-        sx={
-          {
-            //   height: height * 8,
-          }
-        }
-      >
+      <Grid className="fullWidth headerContainer">
         헤더
-        <Button onClick={handleHeader}>헤더 오픈</Button>
+        <Button onClick={toggleDrawer}>헤더 오픈</Button>
       </Grid>
+      <Drawer open={isDrawerOpen}></Drawer>
     </header>
   );
 };
