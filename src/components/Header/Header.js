@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import { Button, Grid } from "@mui/material";
 
 const Header = ({ height }) => {
@@ -6,14 +8,12 @@ const Header = ({ height }) => {
   return (
     <header>
       <Grid
-        className="fullWidth"
-        sx={{
-          height: height * 8,
-          position: "fixed",
-          top: 0,
-          left: 0,
-          zIndex: 5,
-        }}
+        className="fullWidth headerContainer"
+        sx={
+          {
+            //   height: height * 8,
+          }
+        }
       >
         헤더
         <Button onClick={handleHeader}>헤더 오픈</Button>

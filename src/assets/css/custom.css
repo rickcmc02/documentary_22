@@ -31,3 +31,15 @@
   min-height: 280px;
   border-radius: 50vmin;
 }
+
+.headerContainer {
+  position: fixed;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  height: 56px;
+  z-index: 5;
+}
+.headerContainer:focus {
+  height: 80px;
+}
