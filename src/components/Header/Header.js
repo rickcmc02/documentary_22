@@ -1,27 +1,39 @@
 import { useState } from "react";
 
 import { Button, Drawer, Grid } from "@mui/material";
-import {
-  KeyboardArrowUpIcon,
-  KeyboardArrowDownIcon,
-} from "@mui/icons-material";
-// import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
-// import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 const Header = ({ height }) => {
-  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const [isHeaderOpen, setIsHeaderOpen] = useState(false);
 
   const handleDrawerOpen = () => {
-    setIsDrawerOpen(true);
+    setIsHeaderOpen(true);
+  };
+  const handleDrawerClose = () => {
+    setIsHeaderOpen(false);
   };
 
   return (
     <header>
-      <Grid className="fullWidth headerContainer">
-        헤더
-        <Button onClick={handleDrawerOpen}>헤더 오픈</Button>
+      <Grid
+        className="fullWidth headerContainer"
+        sx={{
+          height: `${isHeaderOpen ? height * 8 * 4 : height * 8}px`,
+          transition: "height 0.5s",
+          backgroundColor: "var(--bright3)",
+        }}
+      >
+        <Grid>헤더</Grid>
+        <Grid className="fullHeight flex">
+          <Button
+            endIcon={
+              isHeaderOpen ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />
+            }
+            onClick={isHeaderOpen ? handleDrawerClose : handleDrawerOpen}
+          ></Button>
+        </Grid>
       </Grid>
-      <Drawer open={isDrawerOpen}></Drawer>
     </header>
   );
 };

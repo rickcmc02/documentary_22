@@ -1,3 +1,33 @@
+.flex {
+  display: flex;
+}
+.contentCenter {
+  justify-content: center;
+}
+.contentStart {
+  justify-content: flex-start;
+}
+.contentEnd {
+  justify-content: end;
+}
+.justifySelfCenter {
+  justify-self: center;
+}
+.justifySelfStart {
+  justify-self: flex-start;
+}
+.justifySelfEnd {
+  justify-self: flex-end;
+}
+.itemsCenter {
+  align-items: center;
+}
+.itemsStart {
+  align-items: flex-start;
+}
+.itemsEnd {
+  align-items: flex-end;
+}
 .centerCenter {
   display: flex;
   justify-content: center;

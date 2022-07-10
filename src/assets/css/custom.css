@@ -34,7 +34,8 @@
 
 .headerContainer {
   position: fixed;
-  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
   top: 0;
   left: 0;
   z-index: 5;
