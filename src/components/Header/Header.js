@@ -1,11 +1,17 @@
 import { useState } from "react";
 
 import { Button, Drawer, Grid } from "@mui/material";
+import {
+  KeyboardArrowUpIcon,
+  KeyboardArrowDownIcon,
+} from "@mui/icons-material";
+// import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+// import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 const Header = ({ height }) => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
-  const toggleDrawer = () => {
+  const handleDrawerOpen = () => {
     setIsDrawerOpen(true);
   };
 
@@ -13,7 +19,7 @@ const Header = ({ height }) => {
     <header>
       <Grid className="fullWidth headerContainer">
         헤더
-        <Button onClick={toggleDrawer}>헤더 오픈</Button>
+        <Button onClick={handleDrawerOpen}>헤더 오픈</Button>
       </Grid>
       <Drawer open={isDrawerOpen}></Drawer>
     </header>
