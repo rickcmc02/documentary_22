@@ -11,6 +11,20 @@ function App() {
   const headerHeight = 7;
   const footerHeight = 20;
 
+  const [isMobile, setIsMobile] = useState(false);
+  const [isTablet, setIsTablet] = useState(false);
+
+  useEffect(() => {
+    let winInnerWidth = window.innerWidth;
+    if (winInnerWidth <= 1024) {
+      if (winInnerWidth <= 768) {
+        setIsMobile(true);
+      } else {
+        setIsTablet(true);
+      }
+    }
+  }, [window.innerWidth]);
+
   return (
     <Grid className="backBright1" sx={{ minHeight: "100vh" }}>
       <Header height={headerHeight} />

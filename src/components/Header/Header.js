@@ -40,7 +40,7 @@ const Header = ({ height }) => {
           boxShadow: "var(--bright3) 0px 0px 20px 0px",
         }}
       >
-        <Grid className="flex" sx={{ px: 2.5, py: 1 }}>
+        <Grid className="flex" sx={{ px: 3, py: 1.5 }}>
           <img src={ProfileImg} className="profileImg" />
           {isHeaderContentOn ? (
             <Grid sx={{ ml: 3 }}>
