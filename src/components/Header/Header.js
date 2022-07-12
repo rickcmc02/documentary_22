@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import { Button, Drawer, Grid } from "@mui/material";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
@@ -8,6 +8,19 @@ import ProfileImg from "assets/img/profile_img.jpeg";
 
 const Header = ({ height }) => {
   const [isHeaderOpen, setIsHeaderOpen] = useState(false);
+  const [isHeaderContentOn, setIsHeaderContentOn] = useState(false);
+
+  const transitionTime = 0.5;
+
+  useEffect(() => {
+    if (isHeaderOpen) {
+      setTimeout(() => {
+        setIsHeaderContentOn(true);
+      }, transitionTime * 0.7 * 1000);
+    } else {
+      setIsHeaderContentOn(false);
+    }
+  }, [isHeaderOpen]);
 
   const handleDrawerOpen = () => {
     setIsHeaderOpen(true);
@@ -22,18 +35,19 @@ const Header = ({ height }) => {
         className="fullWidth headerContainer"
         sx={{
           height: `${isHeaderOpen ? height * 8 * 4 : height * 8}px`,
-          transition: "height 0.5s",
+          transition: `height ${transitionTime}s`,
           backgroundColor: "var(--bright3)",
           boxShadow: "var(--bright3) 0px 0px 20px 0px",
         }}
       >
         <Grid className="flex" sx={{ px: 2.5, py: 1 }}>
           <img src={ProfileImg} className="profileImg" />
-          {isHeaderOpen ? (
+          {isHeaderContentOn ? (
             <Grid sx={{ ml: 3 }}>
               <p>양희영</p>
             </Grid>
           ) : null}
+          <Grid></Grid>
         </Grid>
         <Grid className="fullHeight flex">
           <Button onClick={isHeaderOpen ? handleDrawerClose : handleDrawerOpen}>
