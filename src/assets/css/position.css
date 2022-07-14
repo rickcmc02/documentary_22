@@ -10,6 +10,9 @@
 .contentEnd {
   justify-content: end;
 }
+.contentSpaceBetween {
+  justify-content: space-between;
+}
 .justifySelfCenter {
   justify-self: center;
 }
@@ -28,6 +31,7 @@
 .itemsEnd {
   align-items: flex-end;
 }
+
 .centerCenter {
   display: flex;
   justify-content: center;

@@ -9,7 +9,7 @@ import Main from "views/Main/Main";
 
 function App() {
   const headerHeight = 7;
-  const footerHeight = 20;
+  const footerHeight = 15;
 
   const [isMobile, setIsMobile] = useState(false);
   const [isTablet, setIsTablet] = useState(false);

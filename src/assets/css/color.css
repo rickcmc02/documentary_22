@@ -1,48 +1,48 @@
 @import url("./palette.css");
 
-.textColor1 {
+.colorColor1 {
   color: var(--color1);
 }
-.textColor2 {
+.colorColor2 {
   color: var(--color2);
 }
-.textColor3 {
+.colorColor3 {
   color: var(--color3);
 }
-.textColor4 {
+.colorColor4 {
   color: var(--color4);
 }
-.textColor5 {
+.colorColor5 {
   color: var(--color5);
 }
-.textBright0 {
+.colorBright0 {
   color: var(--bright0);
 }
-.textBright1 {
+.colorBright1 {
   color: var(--bright1);
 }
-.textBright2 {
+.colorBright2 {
   color: var(--bright2);
 }
-.textBright3 {
+.colorBright3 {
   color: var(--bright3);
 }
-.textBright4 {
+.colorBright4 {
   color: var(--bright4);
 }
-.textBright5 {
+.colorBright5 {
   color: var(--bright5);
 }
-.textBright6 {
+.colorBright6 {
   color: var(--bright6);
 }
-.textBright7 {
+.colorBright7 {
   color: var(--bright7);
 }
-.textBright8 {
+.colorBright8 {
   color: var(--bright8);
 }
-.textBright9 {
+.colorBright9 {
   color: var(--bright9);
 }
 
