@@ -5,10 +5,12 @@ const Footer = ({ height }) => {
     <footer>
       <Grid
         sx={{
+          borderTop: "1px solid var(--bright2)",
+          color: "var(--bright3)",
           height: height * 8,
         }}
       >
-        푸터
+        Copyright 2022. retriever0 all rights reserved
       </Grid>
     </footer>
   );

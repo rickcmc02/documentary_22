@@ -36,8 +36,6 @@ const Header = ({ height }) => {
         sx={{
           height: `${isHeaderOpen ? height * 8 * 4 : height * 8}px`,
           transition: `height ${transitionTime}s`,
-          backgroundColor: "var(--bright3)",
-          boxShadow: "var(--bright3) 0px 0px 20px 0px",
         }}
       >
         <Grid className="flex" sx={{ px: 3, py: 1.5 }}>

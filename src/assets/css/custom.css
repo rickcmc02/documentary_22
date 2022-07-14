@@ -39,6 +39,8 @@
   top: 0;
   left: 0;
   z-index: 5;
+  background-color: var(--bright2);
+  box-shadow: var(--bright2) 0px 0px 20px 0px;
 }
 .profileImg {
   height: 100%;
