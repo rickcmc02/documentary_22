@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-import { Button, Container, Drawer, Grid } from "@mui/material";
+import { Button, Container, Grid, Link } from "@mui/material";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
@@ -11,6 +11,13 @@ const Header = ({ height, isMobile, isTablet }) => {
   const [isHeaderContentOn, setIsHeaderContentOn] = useState(false);
 
   const transitionTime = 0.4;
+  const navlinkList = [
+    { id: "stack", label: "기술 스택" },
+    { id: "education", label: "학력" },
+    { id: "career", label: "경력" },
+    { id: "project", label: "프로젝트" },
+    { id: "self", label: "자기소개" },
+  ];
 
   useEffect(() => {
     if (isHeaderOpen) {
@@ -60,21 +67,27 @@ const Header = ({ height, isMobile, isTablet }) => {
                 }}
               />
             </Button>
-            {isHeaderContentOn ? (
-              <Grid
-                className="flex contentSpaceBetween"
-                sx={{
-                  ml: isMobile || isTablet ? 2 : 4,
-                  py: 1,
-                  width: "80%",
-                  flexDirection: "column",
-                }}
-              >
-                <span className="weight700 size28 colorColor5">양희영</span>
-                <span>내브바</span>
+            <Grid
+              container
+              direction="column"
+              className="contentSpaceBetween"
+              sx={{
+                ml: isMobile || isTablet ? 2 : 4,
+                py: 1,
+                width: "80%",
+              }}
+            >
+              <Grid>
+                {isHeaderContentOn ? (
+                  <span className="weight700 size28 colorColor5">양희영</span>
+                ) : null}
               </Grid>
-            ) : null}
-            <Grid></Grid>
+              <Grid container>
+                {navlinkList.map((navlink) => {
+                  <Button>{navlink.label}</Button>;
+                })}
+              </Grid>
+            </Grid>
           </Grid>
           <Grid className="fullHeight flex">
             <Button
