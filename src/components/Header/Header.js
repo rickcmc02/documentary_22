@@ -1,22 +1,22 @@
 import { useState, useEffect } from "react";
 
-import { Button, Drawer, Grid } from "@mui/material";
+import { Button, Container, Drawer, Grid } from "@mui/material";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 import ProfileImg from "assets/img/profile_img.jpeg";
 
-const Header = ({ height }) => {
+const Header = ({ height, isMobile, isTablet }) => {
   const [isHeaderOpen, setIsHeaderOpen] = useState(false);
   const [isHeaderContentOn, setIsHeaderContentOn] = useState(false);
 
-  const transitionTime = 0.5;
+  const transitionTime = 0.4;
 
   useEffect(() => {
     if (isHeaderOpen) {
       setTimeout(() => {
         setIsHeaderContentOn(true);
-      }, transitionTime * 0.7 * 1000);
+      }, transitionTime * 0.5 * 1000);
     } else {
       setIsHeaderContentOn(false);
     }
@@ -31,28 +31,64 @@ const Header = ({ height }) => {
 
   return (
     <header>
-      <Grid
-        className="fullWidth headerContainer"
-        sx={{
-          height: `${isHeaderOpen ? height * 8 * 4 : height * 8}px`,
-          transition: `height ${transitionTime}s`,
-        }}
-      >
-        <Grid className="flex" sx={{ px: 3, py: 1.5 }}>
-          <img src={ProfileImg} className="profileImg" />
-          {isHeaderContentOn ? (
-            <Grid sx={{ ml: 3 }}>
-              <p>양희영</p>
-            </Grid>
-          ) : null}
-          <Grid></Grid>
+      <Container>
+        <Grid
+          className="fullWidth headerContainer"
+          sx={{
+            height: `${isHeaderOpen ? height * 8 * 4 : height * 8}px`,
+            transition: `height ${transitionTime}s`,
+          }}
+        >
+          <Grid
+            className="flex fullWidth"
+            sx={{
+              px: isMobile || isTablet ? 2 : 4,
+              py: isHeaderOpen ? 2 : 1,
+              transition: `padding ${transitionTime}s`,
+            }}
+          >
+            <Button
+              sx={{ borderRadius: "100px", minWidth: 0, m: -0.75 }}
+              onClick={isHeaderOpen ? handleDrawerClose : handleDrawerOpen}
+            >
+              <img
+                src={ProfileImg}
+                className="profileImg"
+                style={{
+                  maxWidth: isMobile ? "70px" : isTablet ? "140px" : "none",
+                  maxHeight: isMobile ? "70px" : isTablet ? "140px" : "none",
+                }}
+              />
+            </Button>
+            {isHeaderContentOn ? (
+              <Grid
+                className="flex contentSpaceBetween"
+                sx={{
+                  ml: isMobile || isTablet ? 2 : 4,
+                  py: 1,
+                  width: "80%",
+                  flexDirection: "column",
+                }}
+              >
+                <span className="weight700 size28 colorColor5">양희영</span>
+                <span>내브바</span>
+              </Grid>
+            ) : null}
+            <Grid></Grid>
+          </Grid>
+          <Grid className="fullHeight flex">
+            <Button
+              onClick={isHeaderOpen ? handleDrawerClose : handleDrawerOpen}
+            >
+              {isHeaderOpen ? (
+                <KeyboardArrowUpIcon />
+              ) : (
+                <KeyboardArrowDownIcon />
+              )}
+            </Button>
+          </Grid>
         </Grid>
-        <Grid className="fullHeight flex">
-          <Button onClick={isHeaderOpen ? handleDrawerClose : handleDrawerOpen}>
-            {isHeaderOpen ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
-          </Button>
-        </Grid>
-      </Grid>
+      </Container>
     </header>
   );
 };

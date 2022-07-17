@@ -16,8 +16,9 @@ function App() {
 
   useEffect(() => {
     let winInnerWidth = window.innerWidth;
-    if (winInnerWidth <= 1024) {
-      if (winInnerWidth <= 768) {
+    console.log(winInnerWidth);
+    if (winInnerWidth < 1024) {
+      if (winInnerWidth < 768) {
         setIsMobile(true);
       } else {
         setIsTablet(true);
@@ -27,7 +28,8 @@ function App() {
 
   return (
     <Grid className="backBright1" sx={{ minHeight: "100vh" }}>
-      <Header height={headerHeight} />
+      {console.log(isMobile, isTablet, "app")}
+      <Header height={headerHeight} isMobile={isMobile} isTablet={isTablet} />
       <Grid
         sx={{
           minHeight: `calc(100vh - ${footerHeight * 8}px)`,

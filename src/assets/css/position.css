@@ -1,6 +1,14 @@
 .flex {
   display: flex;
 }
+.flexDirectionRow {
+  flex-direction: row;
+  -webkit-flex-direction: row;
+}
+.flexDirectionColumn {
+  flex-direction: column;
+  -webkit-flex-direction: column;
+}
 .contentCenter {
   justify-content: center;
 }

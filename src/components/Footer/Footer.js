@@ -3,7 +3,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 
 const Footer = ({ height }) => {
   const toGithub = () => {
-    window.location.href = "https://github.com/rickcmc02";
+    window.open("https://github.com/rickcmc02", "_blank");
   };
 
   return (
@@ -14,15 +14,19 @@ const Footer = ({ height }) => {
           borderTop: "1px solid var(--bright3)",
           color: "var(--bright4)",
           height: height * 8,
-          p: 3,
+          p: 2,
         }}
       >
         <Grid>
-          <IconButton sx={{ p: 0 }} onClick={toGithub}>
-            <GitHubIcon className="colorBright4" />
+          <IconButton className="footerIconBtn" onClick={toGithub}>
+            <GitHubIcon />
           </IconButton>
         </Grid>
-        <Grid>Copyright 2022. retriever0 all rights reserved</Grid>
+        <Grid sx={{ p: 1 }}>
+          <span className="colorBright5 weight300 size14">
+            Copyright 2022. retriever0 all rights reserved
+          </span>
+        </Grid>
       </Grid>
     </footer>
   );
