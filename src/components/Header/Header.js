@@ -23,7 +23,7 @@ const Header = ({ height, isMobile, isTablet }) => {
     if (isHeaderOpen) {
       setTimeout(() => {
         setIsHeaderContentOn(true);
-      }, transitionTime * 0.5 * 1000);
+      }, transitionTime * 0.3 * 1000);
     } else {
       setIsHeaderContentOn(false);
     }
@@ -70,21 +70,28 @@ const Header = ({ height, isMobile, isTablet }) => {
             <Grid
               container
               direction="column"
-              className="contentSpaceBetween"
+              justifyContent="space-between"
               sx={{
                 ml: isMobile || isTablet ? 2 : 4,
-                py: 1,
                 width: "80%",
               }}
             >
               <Grid>
                 {isHeaderContentOn ? (
-                  <span className="weight700 size28 colorColor5">양희영</span>
+                  <Grid sx={{ py: 1 }}>
+                    <span className="weight700 size28 colorColor5">양희영</span>
+                  </Grid>
                 ) : null}
               </Grid>
               <Grid container>
                 {navlinkList.map((navlink) => {
-                  <Button>{navlink.label}</Button>;
+                  return (
+                    <Button sx={{ mr: isMobile ? 0.5 : 1.5 }}>
+                      <span className="colorColor5 size15">
+                        {navlink.label}
+                      </span>
+                    </Button>
+                  );
                 })}
               </Grid>
             </Grid>
