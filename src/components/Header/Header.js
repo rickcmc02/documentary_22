@@ -38,77 +38,79 @@ const Header = ({ height, isMobile, isTablet }) => {
 
   return (
     <header>
-      <Container>
-        <Grid
-          className="fullWidth headerContainer"
-          sx={{
-            height: `${isHeaderOpen ? height * 8 * 4 : height * 8}px`,
-            transition: `height ${transitionTime}s`,
-          }}
-        >
-          <Grid
-            className="flex fullWidth"
-            sx={{
-              px: isMobile || isTablet ? 2 : 4,
-              py: isHeaderOpen ? 2 : 1,
-              transition: `padding ${transitionTime}s`,
-            }}
-          >
-            <Button
-              sx={{ borderRadius: "100px", minWidth: 0, m: -0.75 }}
-              onClick={isHeaderOpen ? handleDrawerClose : handleDrawerOpen}
-            >
-              <img
-                src={ProfileImg}
-                className="profileImg"
-                style={{
-                  maxWidth: isMobile ? "70px" : isTablet ? "140px" : "none",
-                  maxHeight: isMobile ? "70px" : isTablet ? "140px" : "none",
-                }}
-              />
-            </Button>
+      <Grid
+        className="fullWidth headerContainer"
+        sx={{
+          height: `${isHeaderOpen ? height * 8 * 4 : height * 8}px`,
+          transition: `height ${transitionTime}s`,
+        }}
+      >
+        <Container>
+          <Grid container justifyContent="space-between">
             <Grid
-              container
-              direction="column"
-              justifyContent="space-between"
+              className="flex"
               sx={{
-                ml: isMobile || isTablet ? 2 : 4,
-                width: "80%",
+                px: isMobile || isTablet ? 2 : 4,
+                py: isHeaderOpen ? 2 : 1,
+                height: `${isHeaderOpen ? height * 8 * 4 : height * 8}px`,
+                transition: `all ${transitionTime}s`,
               }}
             >
-              <Grid>
-                {isHeaderContentOn ? (
-                  <Grid sx={{ py: 1 }}>
-                    <span className="weight700 size28 colorColor5">양희영</span>
-                  </Grid>
-                ) : null}
-              </Grid>
-              <Grid container>
-                {navlinkList.map((navlink) => {
-                  return (
-                    <Button sx={{ mr: isMobile ? 0.5 : 1.5 }}>
-                      <span className="colorColor5 size15">
-                        {navlink.label}
+              <Button
+                sx={{ borderRadius: "100px", minWidth: 0, m: -0.75 }}
+                onClick={isHeaderOpen ? handleDrawerClose : handleDrawerOpen}
+              >
+                <img
+                  src={ProfileImg}
+                  className="profileImg"
+                  style={{
+                    maxWidth: isMobile ? "70px" : isTablet ? "140px" : "none",
+                    maxHeight: isMobile ? "70px" : isTablet ? "140px" : "none",
+                  }}
+                />
+              </Button>
+              <Grid
+                container
+                direction="column"
+                justifyContent="space-between"
+                sx={{ ml: isMobile || isTablet ? 2 : 4 }}
+              >
+                <Grid>
+                  {isHeaderContentOn ? (
+                    <Grid sx={{ py: 1 }}>
+                      <span className="weight700 size28 colorColor5">
+                        양희영
                       </span>
-                    </Button>
-                  );
-                })}
+                    </Grid>
+                  ) : null}
+                </Grid>
+                <Grid container>
+                  {navlinkList.map((navlink) => {
+                    return (
+                      <Button sx={{ mr: isMobile ? 0.5 : 1.5 }}>
+                        <span className="colorColor5 size15">
+                          {navlink.label}
+                        </span>
+                      </Button>
+                    );
+                  })}
+                </Grid>
               </Grid>
             </Grid>
+            <Grid className="flex">
+              <Button
+                onClick={isHeaderOpen ? handleDrawerClose : handleDrawerOpen}
+              >
+                {isHeaderOpen ? (
+                  <KeyboardArrowUpIcon />
+                ) : (
+                  <KeyboardArrowDownIcon />
+                )}
+              </Button>
+            </Grid>
           </Grid>
-          <Grid className="fullHeight flex">
-            <Button
-              onClick={isHeaderOpen ? handleDrawerClose : handleDrawerOpen}
-            >
-              {isHeaderOpen ? (
-                <KeyboardArrowUpIcon />
-              ) : (
-                <KeyboardArrowDownIcon />
-              )}
-            </Button>
-          </Grid>
-        </Grid>
-      </Container>
+        </Container>
+      </Grid>
     </header>
   );
 };

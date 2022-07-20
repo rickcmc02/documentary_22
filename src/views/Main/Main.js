@@ -1,9 +1,11 @@
-import { Grid } from "@mui/material";
+import { Container, Grid } from "@mui/material";
 
 const Main = () => {
   return (
     <div>
-      <Grid>메인</Grid>
+      <Container>
+        <Grid>메인</Grid>
+      </Container>
     </div>
   );
 };
