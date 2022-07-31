@@ -87,7 +87,10 @@ const Header = ({ height, isMobile, isTablet }) => {
                 <Grid container>
                   {navlinkList.map((navlink) => {
                     return (
-                      <Button sx={{ mr: isMobile ? 0.5 : 1.5 }}>
+                      <Button
+                        key={`navBtn_${navlink.id}`}
+                        sx={{ mr: isMobile ? 0.5 : 1.5 }}
+                      >
                         <span className="colorColor5 size15">
                           {navlink.label}
                         </span>

@@ -27,7 +27,6 @@ function App() {
 
   return (
     <Grid className="backBright1" sx={{ minHeight: "100vh" }}>
-      {console.log(isMobile, isTablet, "app")}
       <Header height={headerHeight} isMobile={isMobile} isTablet={isTablet} />
       <Grid
         sx={{

@@ -4,7 +4,9 @@ const Main = () => {
   return (
     <div>
       <Container>
-        <Grid className="colorBright9">메인</Grid>
+        <Grid>
+          <p className="colorBright9">메인</p>
+        </Grid>
       </Container>
     </div>
   );
