@@ -49,6 +49,17 @@
   --primary8: var(--cyan8);
   --primary9: var(--cyan9);
 
+  --primary0hover: var(--cyan0hover);
+  --primary1hover: var(--cyan1hover);
+  --primary2hover: var(--cyan2hover);
+  --primary3hover: var(--cyan3hover);
+  --primary4hover: var(--cyan4hover);
+  --primary5hover: var(--cyan5hover);
+  --primary6hover: var(--cyan6hover);
+  --primary7hover: var(--cyan7hover);
+  --primary8hover: var(--cyan8hover);
+  --primary9hover: var(--cyan9hover);
+
   --bright0: var(--gray0);
   --bright1: var(--gray1);
   --bright2: var(--gray2);
@@ -74,16 +85,16 @@
     --primary1: var(--cyan8);
     --primary0: var(--cyan9);
 
-    --primary0hover: var(--primary9hover);
-    --primary1hover: var(--primary8hover);
-    --primary2hover: var(--primary7hover);
-    --primary3hover: var(--primary6hover);
-    --primary4hover: var(--primary5hover);
-    --primary5hover: var(--primary4hover);
-    --primary6hover: var(--primary3hover);
-    --primary7hover: var(--primary2hover);
-    --primary8hover: var(--primary1hover);
-    --primary9hover: var(--primary0hover);
+    --primary0hover: var(--cyan9hover);
+    --primary1hover: var(--cyan8hover);
+    --primary2hover: var(--cyan7hover);
+    --primary3hover: var(--cyan6hover);
+    --primary4hover: var(--cyan5hover);
+    --primary5hover: var(--cyan4hover);
+    --primary6hover: var(--cyan3hover);
+    --primary7hover: var(--cyan2hover);
+    --primary8hover: var(--cyan1hover);
+    --primary9hover: var(--cyan0hover);
 
     --bright9: var(--gray0);
     --bright8: var(--gray1);

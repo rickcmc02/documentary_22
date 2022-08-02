@@ -45,8 +45,11 @@
   height: 100%;
   border-radius: 50%;
 }
+.headerToggleButton {
+  border-radius: 0 !important;
+}
 .headerToggleButton:hover {
-  background-color: rgba(var(--primary8), 0.4) !important;
+  background-color: var(--primary7hover) !important;
 }
 .headerToggleButton > svg {
   fill: var(--primary7);

@@ -77,7 +77,7 @@ const Header = ({ height, isMobile, isTablet }) => {
               >
                 <Grid>
                   {isHeaderContentOn ? (
-                    <Grid sx={{ py: 1 }}>
+                    <Grid sx={{ p: 1 }}>
                       <span className="weight700 size28 colorPrimary9">
                         양희영
                       </span>
