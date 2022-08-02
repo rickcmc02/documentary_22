@@ -15,7 +15,7 @@ const Gate = () => {
       <Grid className="centerCenter borderBright3 thumbOrbit">
         <Grid className="centerCenter thumbNailBack">
           <Grid
-            className="centerCenter backColor4 cursorPointer thumbNailCover"
+            className="centerCenter cursorPointer thumbNailCover"
             onClick={() => navigate("/main")}
           >
             Retriever Young

@@ -1,19 +1,34 @@
 @import url("./palette.css");
 
-.colorColor1 {
-  color: var(--color1);
+.colorPrimary0 {
+  color: var(--primary0);
 }
-.colorColor2 {
-  color: var(--color2);
+.colorPrimary1 {
+  color: var(--primary1);
 }
-.colorColor3 {
-  color: var(--color3);
+.colorPrimary2 {
+  color: var(--primary2);
 }
-.colorColor4 {
-  color: var(--color4);
+.colorPrimary3 {
+  color: var(--primary3);
 }
-.colorColor5 {
-  color: var(--color5);
+.colorPrimary4 {
+  color: var(--primary4);
+}
+.colorPrimary5 {
+  color: var(--primary5);
+}
+.colorPrimary6 {
+  color: var(--primary6);
+}
+.colorPrimary7 {
+  color: var(--primary7);
+}
+.colorPrimary8 {
+  color: var(--primary8);
+}
+.colorPrimary9 {
+  color: var(--primary9);
 }
 .colorBright0 {
   color: var(--bright0);
@@ -46,20 +61,35 @@
   color: var(--bright9);
 }
 
-.backColor1 {
-  background-color: var(--color1);
+.backPrimary0 {
+  background-color: var(--primary0);
 }
-.backColor2 {
-  background-color: var(--color2);
+.backPrimary1 {
+  background-color: var(--primary1);
 }
-.backColor3 {
-  background-color: var(--color3);
+.backPrimary2 {
+  background-color: var(--primary2);
 }
-.backColor4 {
-  background-color: var(--color4);
+.backPrimary3 {
+  background-color: var(--primary3);
 }
-.backColor5 {
-  background-color: var(--color5);
+.backPrimary4 {
+  background-color: var(--primary4);
+}
+.backPrimary5 {
+  background-color: var(--primary5);
+}
+.backPrimary6 {
+  background-color: var(--primary6);
+}
+.backPrimary7 {
+  background-color: var(--primary7);
+}
+.backPrimary8 {
+  background-color: var(--primary8);
+}
+.backPrimary9 {
+  background-color: var(--primary9);
 }
 .backBright0 {
   background-color: var(--bright0);
@@ -92,36 +122,66 @@
   background-color: var(--bright9);
 }
 
-.fillColor1 {
-  fill: var(--color1);
+.fillPrimary0 {
+  fill: var(--primary0);
 }
-.fillColor2 {
-  fill: var(--color2);
+.fillPrimary1 {
+  fill: var(--primary1);
 }
-.fillColor3 {
-  fill: var(--color3);
+.fillPrimary2 {
+  fill: var(--primary2);
 }
-.fillColor4 {
-  fill: var(--color4);
+.fillPrimary3 {
+  fill: var(--primary3);
 }
-.fillColor5 {
-  fill: var(--color5);
+.fillPrimary4 {
+  fill: var(--primary4);
+}
+.fillPrimary5 {
+  fill: var(--primary5);
+}
+.fillPrimary6 {
+  fill: var(--primary6);
+}
+.fillPrimary7 {
+  fill: var(--primary7);
+}
+.fillPrimary8 {
+  fill: var(--primary8);
+}
+.fillPrimary9 {
+  fill: var(--primary9);
 }
 
-.borderColor1 {
-  border: 1px solid var(--color1);
+.borderPrimary0 {
+  border: 1px solid var(--primary0);
 }
-.borderColor2 {
-  border: 1px solid var(--color2);
+.borderPrimary1 {
+  border: 1px solid var(--primary1);
 }
-.borderColor3 {
-  border: 1px solid var(--color3);
+.borderPrimary2 {
+  border: 1px solid var(--primary2);
 }
-.borderColor4 {
-  border: 1px solid var(--color4);
+.borderPrimary3 {
+  border: 1px solid var(--primary3);
 }
-.borderColor5 {
-  border: 1px solid var(--color5);
+.borderPrimary4 {
+  border: 1px solid var(--primary4);
+}
+.borderPrimary5 {
+  border: 1px solid var(--primary5);
+}
+.borderPrimary6 {
+  border: 1px solid var(--primary6);
+}
+.borderPrimary7 {
+  border: 1px solid var(--primary7);
+}
+.borderPrimary8 {
+  border: 1px solid var(--primary8);
+}
+.borderPrimary9 {
+  border: 1px solid var(--primary9);
 }
 .borderBright1 {
   border: 1px solid var(--bright1);
@@ -151,18 +211,33 @@
   border: 1px solid var(--bright9);
 }
 
-.borBottomColor1 {
-  border-bottom: 1px solid var(--color1);
+.borBottomPrimary0 {
+  border-bottom: 1px solid var(--primary0);
 }
-.borBottomColor2 {
-  border-bottom: 1px solid var(--color2);
+.borBottomPrimary1 {
+  border-bottom: 1px solid var(--primary1);
 }
-.borBottomColor3 {
-  border-bottom: 1px solid var(--color3);
+.borBottomPrimary2 {
+  border-bottom: 1px solid var(--primary2);
 }
-.borBottomColor4 {
-  border-bottom: 1px solid var(--color4);
+.borBottomPrimary3 {
+  border-bottom: 1px solid var(--primary3);
 }
-.borBottomColor5 {
-  border-bottom: 1px solid var(--color5);
+.borBottomPrimary4 {
+  border-bottom: 1px solid var(--primary4);
+}
+.borBottomPrimary5 {
+  border-bottom: 1px solid var(--primary5);
+}
+.borBottomPrimary6 {
+  border-bottom: 1px solid var(--primary6);
+}
+.borBottomPrimary7 {
+  border-bottom: 1px solid var(--primary7);
+}
+.borBottomPrimary8 {
+  border-bottom: 1px solid var(--primary8);
+}
+.borBottomPrimary9 {
+  border-bottom: 1px solid var(--primary9);
 }

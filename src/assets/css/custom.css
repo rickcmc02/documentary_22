@@ -10,7 +10,8 @@
   height: 100%;
   border-radius: 100%;
   z-index: 5;
-  box-shadow: var(--color4) 0px 0px 50px 0px;
+  box-shadow: var(--primary8) 0px 0px 50px 0px;
+  background-color: var(--primary8);
   color: var(--bright2);
   font-size: 19px;
   font-weight: 300;
@@ -43,6 +44,12 @@
 .profileImg {
   height: 100%;
   border-radius: 50%;
+}
+.headerToggleButton:hover {
+  background-color: rgba(var(--primary8), 0.4) !important;
+}
+.headerToggleButton > svg {
+  fill: var(--primary7);
 }
 
 .footerIconBtn {

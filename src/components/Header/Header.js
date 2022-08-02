@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-import { Button, Container, Grid, Link } from "@mui/material";
+import { Button, Container, Grid, IconButton } from "@mui/material";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
@@ -78,7 +78,7 @@ const Header = ({ height, isMobile, isTablet }) => {
                 <Grid>
                   {isHeaderContentOn ? (
                     <Grid sx={{ py: 1 }}>
-                      <span className="weight700 size28 colorColor5">
+                      <span className="weight700 size28 colorPrimary9">
                         양희영
                       </span>
                     </Grid>
@@ -91,7 +91,7 @@ const Header = ({ height, isMobile, isTablet }) => {
                         key={`navBtn_${navlink.id}`}
                         sx={{ mr: isMobile ? 0.5 : 1.5 }}
                       >
-                        <span className="colorColor5 size15">
+                        <span className="colorPrimary8 size15">
                           {navlink.label}
                         </span>
                       </Button>
@@ -101,7 +101,8 @@ const Header = ({ height, isMobile, isTablet }) => {
               </Grid>
             </Grid>
             <Grid className="flex">
-              <Button
+              <IconButton
+                className="headerToggleButton"
                 onClick={isHeaderOpen ? handleDrawerClose : handleDrawerOpen}
               >
                 {isHeaderOpen ? (
@@ -109,7 +110,7 @@ const Header = ({ height, isMobile, isTablet }) => {
                 ) : (
                   <KeyboardArrowDownIcon />
                 )}
-              </Button>
+              </IconButton>
             </Grid>
           </Grid>
         </Container>
