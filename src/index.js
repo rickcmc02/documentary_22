@@ -1,17 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Provider, createStoreHook } from "react-redux";
-import { applyMiddleware } from "redux";
+import { Provider } from "react-redux";
 
-import rootReducer from "redux/reducers";
+import store from "redux/config";
 
 import "assets/css/index.css";
 import Gate from "layouts/Gate";
 import App from "layouts/App";
 import Error from "layouts/Error";
-
-const store = createStoreHook(rootReducer, applyMiddleware());
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
