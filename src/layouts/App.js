@@ -35,7 +35,7 @@ function App() {
         }}
       >
         <Routes>
-          <Route path="/" element={<Main />} />
+          <Route path="/main" element={<Main />} />
         </Routes>
       </Grid>
       <Footer height={footerHeight} />
