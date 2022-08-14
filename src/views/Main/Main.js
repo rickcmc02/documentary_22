@@ -5,7 +5,7 @@ const Main = () => {
     <div>
       <Container>
         <Grid>
-          <p className="colorBright9">리덕스부터 제작하기</p>
+          <p className="colorBright9">리덕스부터 제작하기 ... 15d</p>
         </Grid>
       </Container>
     </div>
