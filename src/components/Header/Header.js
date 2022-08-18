@@ -8,6 +8,8 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import ProfileImg from "assets/img/profile_img.jpeg";
 
 const Header = ({ height, isMobile, isTablet }) => {
+  const { page } = useSelector((state) => ({ page: state.page }), []);
+
   const [isHeaderOpen, setIsHeaderOpen] = useState(false);
   const [isHeaderContentOn, setIsHeaderContentOn] = useState(false);
 
