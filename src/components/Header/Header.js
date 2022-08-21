@@ -8,7 +8,7 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import ProfileImg from "assets/img/profile_img.jpeg";
 
 const Header = ({ height, isMobile, isTablet }) => {
-  const { page } = useSelector((state) => ({ page: state.page }), []);
+  const page = useSelector((state) => state.page);
 
   const [isHeaderOpen, setIsHeaderOpen] = useState(false);
   const [isHeaderContentOn, setIsHeaderContentOn] = useState(false);
@@ -38,6 +38,8 @@ const Header = ({ height, isMobile, isTablet }) => {
   const handleDrawerClose = () => {
     setIsHeaderOpen(false);
   };
+
+  const handleNavTarget = (navId) => {};
 
   return (
     <header>
@@ -88,18 +90,19 @@ const Header = ({ height, isMobile, isTablet }) => {
                   ) : null}
                 </Grid>
                 <Grid container>
-                  {navlinkList.map((navlink) => {
-                    return (
-                      <Button
-                        key={`navBtn_${navlink.id}`}
-                        sx={{ mr: isMobile ? 0.5 : 1.5 }}
-                      >
-                        <span className="colorPrimary8 size15">
-                          {navlink.label}
-                        </span>
-                      </Button>
-                    );
-                  })}
+                  {navlinkList.map((navlink) => (
+                    <Button
+                      key={`navBtn_${navlink.id}`}
+                      sx={{ mr: isMobile ? 0.5 : 1.5 }}
+                      onClick={() => {
+                        handleNavTarget(navlink.id);
+                      }}
+                    >
+                      <span className="colorPrimary8 size15">
+                        {navlink.label}
+                      </span>
+                    </Button>
+                  ))}
                 </Grid>
               </Grid>
             </Grid>
