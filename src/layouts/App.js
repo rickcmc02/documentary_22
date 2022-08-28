@@ -6,6 +6,11 @@ import { Grid } from "@mui/material";
 import Header from "components/Header/Header";
 import Footer from "components/Footer/Footer";
 import Main from "views/Main/Main";
+import Education from "views/Career/Education";
+import TechStack from "views/Career/TechStack";
+import WorkExperience from "views/Career/WorkExperience";
+import ProjectList from "views/Project/ProjectList";
+import SelfIntro from "views/Self/SelfIntro";
 
 function App() {
   const headerHeight = 7;
@@ -36,6 +41,11 @@ function App() {
       >
         <Routes>
           <Route path="/main" element={<Main />} />
+          <Route path="/stack" element={<TechStack />} />
+          <Route path="/education" element={<Education />} />
+          <Route path="/work" element={<WorkExperience />} />
+          <Route path="/project" element={<ProjectList />} />
+          <Route path="/self" element={<SelfIntro />} />
         </Routes>
       </Grid>
       <Footer height={footerHeight} />

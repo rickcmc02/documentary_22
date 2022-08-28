@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 import { toNavPage } from "redux/slices/page";
 
@@ -12,6 +13,7 @@ import ProfileImg from "assets/img/profile_img.jpeg";
 const Header = ({ height, isMobile, isTablet }) => {
   const page = useSelector((state) => state.page);
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const [isHeaderOpen, setIsHeaderOpen] = useState(false);
   const [isHeaderContentOn, setIsHeaderContentOn] = useState(false);
@@ -43,7 +45,7 @@ const Header = ({ height, isMobile, isTablet }) => {
   };
 
   const handleNavTarget = (navId) => {
-    console.log(navId);
+    navigate(`/${navId}`);
     dispatch(toNavPage(navId));
   };
 
