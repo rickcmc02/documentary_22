@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+
+import { toNavPage } from "redux/slices/page";
 
 import { Button, Container, Grid, IconButton } from "@mui/material";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
@@ -9,6 +11,7 @@ import ProfileImg from "assets/img/profile_img.jpeg";
 
 const Header = ({ height, isMobile, isTablet }) => {
   const page = useSelector((state) => state.page);
+  const dispatch = useDispatch();
 
   const [isHeaderOpen, setIsHeaderOpen] = useState(false);
   const [isHeaderContentOn, setIsHeaderContentOn] = useState(false);
@@ -39,7 +42,10 @@ const Header = ({ height, isMobile, isTablet }) => {
     setIsHeaderOpen(false);
   };
 
-  const handleNavTarget = (navId) => {};
+  const handleNavTarget = (navId) => {
+    console.log(navId);
+    dispatch(toNavPage(navId));
+  };
 
   return (
     <header>

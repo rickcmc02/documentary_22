@@ -6,14 +6,11 @@ const pageSlice = createSlice({
     value: "main",
   },
   reducers: {
-    toCareerPage: (state) => {
-      state.value = "career";
-    },
-    toEducationPage: (state) => {
-      state.value = "education";
+    toNavPage: (state, action) => {
+      state.value = action.payload;
     },
   },
 });
 
-export const { toCareerPage, toEducationPage } = pageSlice.actions;
+export const { toNavPage } = pageSlice.actions;
 export default pageSlice.reducer;
