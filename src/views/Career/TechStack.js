@@ -1,5 +1,7 @@
+import { Grid } from "@mui/material";
+
 function TechStack() {
-  return <div>기술 스택</div>;
+  return <Grid>기술 스택</Grid>;
 }
 
 export default TechStack;

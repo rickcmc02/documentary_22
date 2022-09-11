@@ -1,20 +1,21 @@
 import { useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 
-import { Grid } from "@mui/material";
+import { Container, Grid } from "@mui/material";
 
 import Header from "components/Header/Header";
 import Footer from "components/Footer/Footer";
 import Main from "views/Main/Main";
 import Education from "views/Career/Education";
 import TechStack from "views/Career/TechStack";
-import WorkExperience from "views/Career/WorkExperience";
+import Experience from "views/Career/Experience";
 import ProjectList from "views/Project/ProjectList";
 import SelfIntro from "views/Self/SelfIntro";
 
 function App() {
   const headerHeight = 7;
   const footerHeight = 15;
+  const containerMaxWidth = 1400;
 
   const [isMobile, setIsMobile] = useState(false);
   const [isTablet, setIsTablet] = useState(false);
@@ -32,23 +33,33 @@ function App() {
 
   return (
     <Grid className="backBright1" sx={{ minHeight: "100vh" }}>
-      <Header height={headerHeight} isMobile={isMobile} isTablet={isTablet} />
+      <Header
+        height={headerHeight}
+        containerMaxWidth={containerMaxWidth}
+        isMobile={isMobile}
+        isTablet={isTablet}
+      />
       <Grid
         sx={{
           minHeight: `calc(100vh - ${footerHeight * 8}px)`,
           pt: headerHeight,
         }}
       >
-        <Routes>
-          <Route path="/main" element={<Main />} />
-          <Route path="/stack" element={<TechStack />} />
-          <Route path="/education" element={<Education />} />
-          <Route path="/work" element={<WorkExperience />} />
-          <Route path="/project" element={<ProjectList />} />
-          <Route path="/self" element={<SelfIntro />} />
-        </Routes>
+        <Container
+          maxWidth="false"
+          sx={{ maxWidth: `${containerMaxWidth}px`, py: 2 }}
+        >
+          <Routes>
+            <Route path="/main" element={<Main />} />
+            <Route path="/stack" element={<TechStack />} />
+            <Route path="/education" element={<Education />} />
+            <Route path="/experience" element={<Experience />} />
+            <Route path="/project" element={<ProjectList />} />
+            <Route path="/self" element={<SelfIntro />} />
+          </Routes>
+        </Container>
       </Grid>
-      <Footer height={footerHeight} />
+      <Footer height={footerHeight} containerMaxWidth={containerMaxWidth} />
     </Grid>
   );
 }

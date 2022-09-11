@@ -10,7 +10,7 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 import ProfileImg from "assets/img/profile_img.jpeg";
 
-const Header = ({ height, isMobile, isTablet }) => {
+const Header = ({ height, containerMaxWidth, isMobile, isTablet }) => {
   const page = useSelector((state) => state.page);
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -22,7 +22,7 @@ const Header = ({ height, isMobile, isTablet }) => {
   const navlinkList = [
     { id: "stack", label: "기술 스택" },
     { id: "education", label: "학력" },
-    { id: "career", label: "경력" },
+    { id: "experience", label: "경력" },
     { id: "project", label: "프로젝트" },
     { id: "self", label: "자기소개" },
   ];
@@ -49,6 +49,10 @@ const Header = ({ height, isMobile, isTablet }) => {
     dispatch(toNavPage(navId));
   };
 
+  const handlePageToMain = () => {
+    navigate("/main");
+  };
+
   return (
     <header>
       <Grid
@@ -58,12 +62,11 @@ const Header = ({ height, isMobile, isTablet }) => {
           transition: `height ${transitionTime}s`,
         }}
       >
-        <Container>
+        <Container maxWidth="false" sx={{ maxWidth: `${containerMaxWidth}px` }}>
           <Grid container justifyContent="space-between">
             <Grid
               className="flex"
               sx={{
-                px: isMobile || isTablet ? 2 : 4,
                 py: isHeaderOpen ? 2 : 1,
                 height: `${isHeaderOpen ? height * 8 * 4 : height * 8}px`,
                 transition: `all ${transitionTime}s`,
@@ -71,7 +74,7 @@ const Header = ({ height, isMobile, isTablet }) => {
             >
               <Button
                 sx={{ borderRadius: "100px", minWidth: 0, m: -0.75 }}
-                onClick={isHeaderOpen ? handleDrawerClose : handleDrawerOpen}
+                onClick={handlePageToMain}
               >
                 <img
                   src={ProfileImg}
