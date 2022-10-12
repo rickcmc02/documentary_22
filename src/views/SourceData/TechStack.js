@@ -1,9 +1,9 @@
 import ReactLogo from "assets/img/logo/react.png";
 import JavascriptLogo from "assets/img/logo/javascript.png";
-import CypressLogo from "assets/img/logo/cypress.png";
+import CypressLogo from "assets/img/logo/cypress.webp";
 import MaterialLogo from "assets/img/logo/materialui.png";
 
-export const eduSource = [
+export const techSource = [
   {
     content: "React",
     // detail: "GPA 3.56 / 4.5",
