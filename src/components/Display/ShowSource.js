@@ -5,7 +5,17 @@ function ShowSource({ sourceData }) {
     <Grid>
       {sourceData.map((data) => (
         <Grid container alignItems="center">
-          {data.imgSrc && <img src={data.imgSrc} style={{ width: "40px" }} />}
+          {data.imgSrc && (
+            <Grid
+              className="backBright8 flex itemsCenter contentCenter"
+              sx={{ borderRadius: "50px", width: "50px", height: "50px" }}
+            >
+              <img
+                src={data.imgSrc}
+                style={{ width: "40px", borderRadius: "10px" }}
+              />
+            </Grid>
+          )}
           {data.content && (
             <Grid>
               <span className="colorBright8">{data.content}</span>
