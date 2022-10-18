@@ -7,8 +7,13 @@ function ShowSource({ sourceData }) {
         <Grid container alignItems="center">
           {data.imgSrc && (
             <Grid
-              className="backBright8 flex itemsCenter contentCenter"
-              sx={{ borderRadius: "50px", width: "50px", height: "50px" }}
+              className="flex itemsCenter contentCenter"
+              sx={{
+                borderRadius: "16px",
+                width: "50px",
+                height: "50px",
+                backgroundColor: "var(--gray0)",
+              }}
             >
               <img
                 src={data.imgSrc}
