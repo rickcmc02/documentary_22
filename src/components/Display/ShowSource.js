@@ -1,8 +1,10 @@
 import { Grid } from "@mui/material";
 
 function ShowSource({ sourceData }) {
+  const imgSize = "56px";
+
   return (
-    <Grid>
+    <Grid sx={{ p: 1 }}>
       {sourceData.map((data) => (
         <Grid container alignItems="center">
           {data.imgSrc && (
@@ -10,8 +12,8 @@ function ShowSource({ sourceData }) {
               className="flex itemsCenter contentCenter"
               sx={{
                 borderRadius: "16px",
-                width: "50px",
-                height: "50px",
+                width: imgSize,
+                height: imgSize,
                 backgroundColor: "var(--gray0)",
               }}
             >
@@ -21,21 +23,25 @@ function ShowSource({ sourceData }) {
               />
             </Grid>
           )}
-          {data.content && (
-            <Grid>
-              <span className="colorBright8">{data.content}</span>
+          <Grid sx={{ width: `calc(100% - ${imgSize})`, p: 1 }}>
+            {data.content && (
+              <Grid sx={{ mb: 1 }}>
+                <span className="colorBright8 size18">{data.content}</span>
+              </Grid>
+            )}
+            <Grid container justifyContent="space-between">
+              {data.detail && (
+                <Grid>
+                  <span className="colorBright6 size16">{data.detail}</span>
+                </Grid>
+              )}
+              {data.period && (
+                <Grid>
+                  <span className="colorBright5 size15">{data.period}</span>
+                </Grid>
+              )}
             </Grid>
-          )}
-          {data.detail && (
-            <Grid>
-              <span className="colorBright6">{data.detail}</span>
-            </Grid>
-          )}
-          {data.period && (
-            <Grid>
-              <span className="colorBright5">{data.period}</span>
-            </Grid>
-          )}
+          </Grid>
         </Grid>
       ))}
     </Grid>
