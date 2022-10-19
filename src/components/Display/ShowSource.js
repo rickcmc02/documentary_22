@@ -4,7 +4,7 @@ function ShowSource({ sourceData }) {
   const imgSize = "56px";
 
   return (
-    <Grid sx={{ p: 1 }}>
+    <Grid sx={{ px: 1, py: 3, borderTop: "1px solid var(--bright3)" }}>
       {sourceData.map((data) => (
         <Grid container alignItems="center">
           {data.imgSrc && (
@@ -23,7 +23,7 @@ function ShowSource({ sourceData }) {
               />
             </Grid>
           )}
-          <Grid sx={{ width: `calc(100% - ${imgSize})`, p: 1 }}>
+          <Grid sx={{ width: `calc(100% - ${imgSize})`, p: 1.5 }}>
             {data.content && (
               <Grid sx={{ mb: 1 }}>
                 <span className="colorBright8 size18">{data.content}</span>

@@ -2,7 +2,7 @@
   width: 65%;
   height: 65%;
   border-radius: 100%;
-  background-image: url("/src/assets/img/profile_img.jpeg");
+  background-image: url("/src/assets/img/profile/cover.jpeg");
   background-size: cover;
 }
 .thumbNailCover {

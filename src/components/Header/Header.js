@@ -8,7 +8,7 @@ import { Button, Container, Grid, IconButton } from "@mui/material";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
-import ProfileImg from "assets/img/profile_img.jpeg";
+import IdPhoto from "assets/img/profile/id_photo.jpeg";
 
 const Header = ({ height, containerMaxWidth, isMobile, isTablet }) => {
   const page = useSelector((state) => state.page);
@@ -77,7 +77,7 @@ const Header = ({ height, containerMaxWidth, isMobile, isTablet }) => {
                 onClick={handlePageToMain}
               >
                 <img
-                  src={ProfileImg}
+                  src={IdPhoto}
                   className="profileImg"
                   style={{
                     maxWidth: isMobile ? "70px" : isTablet ? "140px" : "none",
