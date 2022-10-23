@@ -21,10 +21,10 @@ const Header = ({ height, containerMaxWidth, isMobile, isTablet }) => {
   const transitionTime = 0.4;
   const navlinkList = [
     { id: "main", label: "홈" },
-    { id: "stack", label: "기술" },
-    { id: "education", label: "학력" },
     { id: "experience", label: "경력" },
+    { id: "education", label: "학력" },
     { id: "project", label: "프로젝트" },
+    { id: "stack", label: "기술" },
   ];
 
   useEffect(() => {
@@ -102,17 +102,16 @@ const Header = ({ height, containerMaxWidth, isMobile, isTablet }) => {
                           양희영
                         </span>
                       </Grid>
-                      <Grid sx={{ mt: 1, ml: 0.5 }}>
+                      <Grid sx={{ mt: 1, ml: 0.5, lineHeight: 1.3 }}>
                         <span className="weight300 size18 colorPrimary8">
+                          HEEYOUNG YANG
+                          <br />
                           github.com/rickcmc02
-                        </span>
-                      </Grid>
-                      <Grid sx={{ mt: 1, ml: 0.5, mb: 3 }}>
-                        <span className="weight300 size18 colorPrimary8">
+                          <br />
                           aa87565115@gmail.com
                         </span>
                       </Grid>
-                      <hr style={{ borderTop: "1px solid var(--bright2)" }} />
+                      <hr style={{ borderTop: "1px solid var(--bright3)" }} />
                     </Grid>
                   ) : null}
                 </Grid>
