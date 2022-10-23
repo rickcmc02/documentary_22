@@ -6,7 +6,7 @@ import ShowSource from "components/Display/ShowSource";
 function TechStack() {
   return (
     <Grid>
-      <ShowSource sourceData={techSource} />
+      <ShowSource title="기술" sourceData={techSource} />
     </Grid>
   );
 }

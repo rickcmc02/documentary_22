@@ -6,7 +6,7 @@ import ShowSource from "components/Display/ShowSource";
 function ProjectList() {
   return (
     <Grid>
-      <ShowSource sourceData={projectSource} />
+      <ShowSource title="프로젝트" sourceData={projectSource} />
     </Grid>
   );
 }

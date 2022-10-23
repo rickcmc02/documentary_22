@@ -1,10 +1,13 @@
 import { Grid } from "@mui/material";
 
-function ShowSource({ sourceData }) {
+function ShowSource({ title, sourceData }) {
   const imgSize = "56px";
 
   return (
     <Grid sx={{ px: 1, py: 3, borderTop: "1px solid var(--bright3)" }}>
+      <Grid sx={{ mb: 1 }}>
+        <span className="size18 weight700 colorBright6">{title}</span>
+      </Grid>
       {sourceData.map((data) => (
         <Grid container alignItems="center">
           {data.imgSrc && (

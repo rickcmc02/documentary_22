@@ -6,7 +6,7 @@ import { Grid } from "@mui/material";
 function Experience() {
   return (
     <Grid>
-      <ShowSource sourceData={expSource} />
+      <ShowSource title="경력" sourceData={expSource} />
     </Grid>
   );
 }

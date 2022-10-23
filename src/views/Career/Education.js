@@ -6,7 +6,7 @@ import { Grid } from "@mui/material";
 function Education() {
   return (
     <Grid>
-      <ShowSource sourceData={eduSource} />
+      <ShowSource title="학력" sourceData={eduSource} />
     </Grid>
   );
 }
