@@ -1,7 +1,7 @@
 import DslabLogo from "assets/img/logo/dslabglobal.jpeg";
-// import EncoreLogo from "assets/img/logo/encore.png";
-// import OpicLogo from "assets/img/logo/opic.png";
-// import MKTestLogo from "assets/img/logo/mktest.png";
+import KicpaLogo from "assets/img/logo/kicpa_black.png";
+import GlovisLogo from "assets/img/logo/glovis_black.png";
+import JtbcLogo from "assets/img/logo/jtbc_black.png";
 // import SamilLogo from "assets/img/logo/samil.png";
 
 export const expSource = [
@@ -11,28 +11,22 @@ export const expSource = [
     period: "`20.05 ~",
     imgSrc: DslabLogo,
   },
-  //   {
-  //     content: "엔코아 Playdata 개발자 양성과정",
-  //     detail: "프로젝트 우수상",
-  //     period: "`20 수료",
-  //     imgSrc: EncoreLogo,
-  //   },
-  //   {
-  //     content: "OPIc 영어말하기테스트",
-  //     detail: "IH (Intermediate High)",
-  //     period: "`22 취득",
-  //     imgSrc: OpicLogo,
-  //   },
-  //   {
-  //     content: "국가공인 매경TEST",
-  //     detail: "경제이해도 최우수등급 (상위 0.3%)",
-  //     period: "`21 취득",
-  //     imgSrc: MKTestLogo,
-  //   },
-  //   {
-  //     content: "삼일회계법인 회계관리1급",
-  //     detail: "회계, 세법",
-  //     period: "`21 취득",
-  //     imgSrc: SamilLogo,
-  //   },
+  {
+    content: "KICPA 공인회계사 수험​",
+    detail: "회계, 재무, 경제, 세법, 상법",
+    period: "`17.03 ~ 20.02",
+    imgSrc: KicpaLogo,
+  },
+  {
+    content: "현대글로비스 기획재정본부 인턴​",
+    detail: "프로젝트 우수상, 자사 중고차 브랜드 앱 마케팅 기획​",
+    period: "`16.07  ~ `16.08​",
+    imgSrc: GlovisLogo,
+  },
+  {
+    content: "JTBC 보도국 정치부회의 인턴기자​",
+    detail: "여당팀(당시 새누리당) 소속, 20대 총선 데이터 수집 및 DB 관리​",
+    period: "`15.12  ~ `16.02​",
+    imgSrc: JtbcLogo,
+  },
 ];
