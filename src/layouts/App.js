@@ -10,7 +10,6 @@ import Education from "views/Career/Education";
 import TechStack from "views/Career/TechStack";
 import Experience from "views/Career/Experience";
 import ProjectList from "views/Project/ProjectList";
-import SelfIntro from "views/Self/SelfIntro";
 
 function App() {
   const headerHeight = 7;
@@ -55,7 +54,6 @@ function App() {
             <Route path="/education" element={<Education />} />
             <Route path="/experience" element={<Experience />} />
             <Route path="/project" element={<ProjectList />} />
-            <Route path="/self" element={<SelfIntro />} />
           </Routes>
         </Container>
       </Grid>

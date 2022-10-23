@@ -25,7 +25,6 @@ const Header = ({ height, containerMaxWidth, isMobile, isTablet }) => {
     { id: "education", label: "학력" },
     { id: "experience", label: "경력" },
     { id: "project", label: "프로젝트" },
-    { id: "self", label: "자기소개" },
   ];
 
   useEffect(() => {
