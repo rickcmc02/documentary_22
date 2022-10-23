@@ -20,6 +20,7 @@ const Header = ({ height, containerMaxWidth, isMobile, isTablet }) => {
 
   const transitionTime = 0.4;
   const navlinkList = [
+    { id: "main", label: "홈" },
     { id: "stack", label: "기술 스택" },
     { id: "education", label: "학력" },
     { id: "experience", label: "경력" },
@@ -29,9 +30,13 @@ const Header = ({ height, containerMaxWidth, isMobile, isTablet }) => {
 
   useEffect(() => {
     if (isHeaderOpen) {
-      setTimeout(() => {
+      const headerConInterv = setTimeout(() => {
         setIsHeaderContentOn(true);
-      }, transitionTime * 0.3 * 1000);
+      }, transitionTime * 0.7 * 1000);
+
+      return () => {
+        clearTimeout(headerConInterv);
+      };
     } else {
       setIsHeaderContentOn(false);
     }
@@ -49,8 +54,9 @@ const Header = ({ height, containerMaxWidth, isMobile, isTablet }) => {
     dispatch(toNavPage(navId));
   };
 
-  const handlePageToMain = () => {
-    navigate("/main");
+  const onClickProfile = () => {
+    if (isHeaderOpen) handleDrawerClose();
+    else handleDrawerOpen();
   };
 
   return (
@@ -72,14 +78,12 @@ const Header = ({ height, containerMaxWidth, isMobile, isTablet }) => {
                 transition: `all ${transitionTime}s`,
               }}
             >
-              <Button
-                sx={{ borderRadius: "100px", minWidth: 0, m: -0.75 }}
-                onClick={handlePageToMain}
-              >
+              <Button sx={{ minWidth: 0, my: -0.75 }} onClick={onClickProfile}>
                 <img
                   src={IdPhoto}
                   className="profileImg"
                   style={{
+                    borderRadius: "100px",
                     maxWidth: isMobile ? "70px" : isTablet ? "140px" : "none",
                     maxHeight: isMobile ? "70px" : isTablet ? "140px" : "none",
                   }}
@@ -94,9 +98,21 @@ const Header = ({ height, containerMaxWidth, isMobile, isTablet }) => {
                 <Grid>
                   {isHeaderContentOn ? (
                     <Grid sx={{ p: 1 }}>
-                      <span className="weight700 size28 colorPrimary9">
-                        양희영
-                      </span>
+                      <Grid>
+                        <span className="weight700 size28 colorPrimary9">
+                          양희영
+                        </span>
+                      </Grid>
+                      <Grid sx={{ mt: 1, ml: 0.5 }}>
+                        <span className="weight300 size18 colorPrimary8">
+                          github.com/rickcmc02
+                        </span>
+                      </Grid>
+                      <Grid sx={{ mt: 1, ml: 0.5 }}>
+                        <span className="weight300 size18 colorPrimary8">
+                          aa87565115@gmail.com
+                        </span>
+                      </Grid>
                     </Grid>
                   ) : null}
                 </Grid>
