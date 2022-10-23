@@ -26,13 +26,15 @@ function ShowSource({ sourceData }) {
           <Grid sx={{ width: `calc(100% - ${imgSize})`, p: 1.5 }}>
             {data.content && (
               <Grid sx={{ mb: 1 }}>
-                <span className="colorBright8 size18">{data.content}</span>
+                <span className="colorBright7 size18">{data.content}</span>
               </Grid>
             )}
             <Grid container justifyContent="space-between">
               {data.detail && (
                 <Grid>
-                  <span className="colorBright6 size16">{data.detail}</span>
+                  <span className="colorBright6 size16 weight300">
+                    {data.detail}
+                  </span>
                 </Grid>
               )}
               {data.period && (

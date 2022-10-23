@@ -107,11 +107,12 @@ const Header = ({ height, containerMaxWidth, isMobile, isTablet }) => {
                           github.com/rickcmc02
                         </span>
                       </Grid>
-                      <Grid sx={{ mt: 1, ml: 0.5 }}>
+                      <Grid sx={{ mt: 1, ml: 0.5, mb: 3 }}>
                         <span className="weight300 size18 colorPrimary8">
                           aa87565115@gmail.com
                         </span>
                       </Grid>
+                      <hr style={{ borderTop: "1px solid var(--bright2)" }} />
                     </Grid>
                   ) : null}
                 </Grid>
