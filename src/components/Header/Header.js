@@ -92,18 +92,26 @@ const Header = ({ height, containerMaxWidth, isMobile, isTablet }) => {
                 container
                 direction="column"
                 justifyContent="space-between"
-                sx={{ ml: isMobile || isTablet ? 2 : 4 }}
+                sx={{ ml: isMobile || isTablet ? 1 : 3 }}
               >
                 <Grid>
                   {isHeaderContentOn ? (
-                    <Grid sx={{ p: 1 }}>
-                      <Grid>
-                        <span className="weight700 size28 colorPrimary9">
+                    <Grid container sx={{ p: 1 }}>
+                      <Grid item xs={12}>
+                        <span
+                          className={`weight700 colorPrimary9 ${
+                            isMobile ? "size24" : "size28"
+                          }`}
+                        >
                           양희영
                         </span>
                       </Grid>
-                      <Grid sx={{ mt: 1, ml: 0.5, lineHeight: 1.3 }}>
-                        <span className="weight300 size18 colorPrimary8">
+                      <Grid item xs={12} sx={{ mt: 1, ml: 1, lineHeight: 1.3 }}>
+                        <span
+                          className={`weight300 colorPrimary8 ${
+                            isMobile ? "size16" : "size18"
+                          }`}
+                        >
                           HEEYOUNG YANG
                           <br />
                           github.com/rickcmc02
@@ -111,7 +119,6 @@ const Header = ({ height, containerMaxWidth, isMobile, isTablet }) => {
                           aa87565115@gmail.com
                         </span>
                       </Grid>
-                      <hr style={{ borderTop: "1px solid var(--bright3)" }} />
                     </Grid>
                   ) : null}
                 </Grid>
@@ -119,7 +126,7 @@ const Header = ({ height, containerMaxWidth, isMobile, isTablet }) => {
                   {navlinkList.map((navlink) => (
                     <Button
                       key={`navBtn_${navlink.id}`}
-                      sx={{ mr: isMobile ? 0.5 : 1.5 }}
+                      sx={{ mx: isMobile ? (isHeaderOpen ? -0.5 : 0) : 1 }}
                       onClick={() => {
                         handleNavTarget(navlink.id);
                       }}
@@ -132,18 +139,20 @@ const Header = ({ height, containerMaxWidth, isMobile, isTablet }) => {
                 </Grid>
               </Grid>
             </Grid>
-            <Grid className="flex">
-              <IconButton
-                className="headerToggleButton"
-                onClick={isHeaderOpen ? handleDrawerClose : handleDrawerOpen}
-              >
-                {isHeaderOpen ? (
-                  <KeyboardArrowUpIcon />
-                ) : (
-                  <KeyboardArrowDownIcon />
-                )}
-              </IconButton>
-            </Grid>
+            {isMobile ? null : (
+              <Grid className="flex">
+                <IconButton
+                  className="headerToggleButton"
+                  onClick={isHeaderOpen ? handleDrawerClose : handleDrawerOpen}
+                >
+                  {isHeaderOpen ? (
+                    <KeyboardArrowUpIcon />
+                  ) : (
+                    <KeyboardArrowDownIcon />
+                  )}
+                </IconButton>
+              </Grid>
+            )}
           </Grid>
         </Container>
       </Grid>
