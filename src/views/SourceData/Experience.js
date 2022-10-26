@@ -8,7 +8,7 @@ export const expSource = [
   {
     content: "DSLABGLOBAL",
     detail: "Front-end engineer",
-    period: "`20.05 ~",
+    period: "`21.05 ~",
     imgSrc: DslabLogo,
   },
   {
