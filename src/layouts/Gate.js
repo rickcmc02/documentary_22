@@ -18,7 +18,7 @@ const Gate = () => {
             className="centerCenter cursorPointer thumbNailCover"
             onClick={() => navigate("/main")}
           >
-            Retriever Young
+            YANG HEEYOUNG
             <Grid sx={{ mt: 1, mx: -3.25 }}>
               <br />
               <p style={{ fontWeight: "normal", fontSize: "15px" }}>
