@@ -34,14 +34,14 @@ function ShowSource({ title, sourceData }) {
             )}
             <Grid container justifyContent="space-between">
               {data.detail && (
-                <Grid>
+                <Grid item xs={12} md={11} sx={{ mb: 0.5 }}>
                   <span className="colorBright6 size16 weight300">
                     {data.detail}
                   </span>
                 </Grid>
               )}
               {data.period && (
-                <Grid>
+                <Grid item xs={12} md={1}>
                   <span className="colorBright5 size15">{data.period}</span>
                 </Grid>
               )}
