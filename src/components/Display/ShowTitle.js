@@ -1,4 +1,5 @@
 import { Grid } from "@mui/material";
+import React from "react";
 
 function ShowTitle({ sourceData }) {
   return (
@@ -24,11 +25,11 @@ function ShowTitle({ sourceData }) {
           className="weight300 size15 colorBright7"
           style={{ lineHeight: 1.7 }}
         >
-          {sourceData.subDescription?.map((desc) => (
-            <>
+          {sourceData.subDescription?.map((desc, idx) => (
+            <React.Fragment key={`subdiscription_${idx}`}>
               {desc}
               <br />
-            </>
+            </React.Fragment>
           ))}
         </span>
       </Grid>

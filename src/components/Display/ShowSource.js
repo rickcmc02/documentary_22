@@ -8,8 +8,8 @@ function ShowSource({ title, sourceData }) {
       <Grid sx={{ mb: 1 }}>
         <span className="size18 weight700 colorBright6">{title}</span>
       </Grid>
-      {sourceData.map((data) => (
-        <Grid container alignItems="center">
+      {sourceData.map((data, idx) => (
+        <Grid container key={`sourcedata_${title}_${idx}`} alignItems="center">
           {data.imgSrc && (
             <Grid
               className="flex itemsCenter contentCenter"
