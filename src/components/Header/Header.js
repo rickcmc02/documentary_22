@@ -126,12 +126,16 @@ const Header = ({ height, containerMaxWidth, isMobile, isTablet }) => {
                   {navlinkList.map((navlink) => (
                     <Button
                       key={`navBtn_${navlink.id}`}
-                      sx={{ mx: isMobile ? (isHeaderOpen ? -0.5 : 0) : 1 }}
+                      sx={{ mx: isMobile ? (isHeaderOpen ? -0.5 : -0.25) : 1 }}
                       onClick={() => {
                         handleNavTarget(navlink.id);
                       }}
                     >
-                      <span className="colorPrimary8 size15">
+                      <span
+                        className={`colorPrimary8 ${
+                          isMobile ? "size14" : "size15"
+                        }`}
+                      >
                         {navlink.label}
                       </span>
                     </Button>
