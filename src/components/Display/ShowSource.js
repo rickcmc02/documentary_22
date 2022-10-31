@@ -32,7 +32,7 @@ function ShowSource({ title, sourceData }) {
                 <span className="colorBright7 size18">{data.content}</span>
               </Grid>
             )}
-            <Grid container justifyContent="space-between">
+            <Grid container>
               {data.detail && (
                 <Grid item xs={12} md={11} sx={{ mb: 0.5 }}>
                   <span className="colorBright6 size16 weight300">
