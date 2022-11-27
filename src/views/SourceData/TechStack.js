@@ -10,6 +10,11 @@ export const techSource = [
     imgSrc: ReactLogo,
   },
   {
+    content: "React Native",
+    detail: "React Native 웹 뷰 기반 팬/팔로잉 프로젝트 ",
+    imgSrc: ReactLogo,
+  },
+  {
     content: "Javascript",
     imgSrc: JavascriptLogo,
   },
