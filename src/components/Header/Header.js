@@ -20,7 +20,6 @@ const Header = ({ height, containerMaxWidth, isMobile, isTablet }) => {
 
   const transitionTime = 0.4;
   const navlinkList = [
-    { id: "main", label: "홈" },
     { id: "experience", label: "경력" },
     { id: "education", label: "학력" },
     { id: "project", label: "프로젝트" },
@@ -123,23 +122,31 @@ const Header = ({ height, containerMaxWidth, isMobile, isTablet }) => {
                   ) : null}
                 </Grid>
                 <Grid container>
-                  {navlinkList.map((navlink) => (
-                    <Button
-                      key={`navBtn_${navlink.id}`}
-                      sx={{ mx: isMobile ? (isHeaderOpen ? -0.5 : -0.25) : 1 }}
-                      onClick={() => {
-                        handleNavTarget(navlink.id);
-                      }}
-                    >
-                      <span
-                        className={`colorPrimary8 ${
-                          isMobile ? "size14" : "size15"
-                        }`}
+                  {navlinkList.map((navlink) => {
+                    let curPathname = window.location.pathname;
+                    let isPathIncluded = curPathname?.includes(navlink.id);
+
+                    return (
+                      <Button
+                        key={`navBtn_${navlink.id}`}
+                        sx={{
+                          mx: isMobile ? (isHeaderOpen ? -0.5 : -0.25) : 1,
+                        }}
+                        onClick={() => {
+                          if (isPathIncluded) handleNavTarget("main");
+                          else handleNavTarget(navlink.id);
+                        }}
                       >
-                        {navlink.label}
-                      </span>
-                    </Button>
-                  ))}
+                        <span
+                          className={`${
+                            isPathIncluded ? "colorPrimary8" : "colorBright8"
+                          } ${isMobile ? "size14" : "size15"}`}
+                        >
+                          {navlink.label}
+                        </span>
+                      </Button>
+                    );
+                  })}
                 </Grid>
               </Grid>
             </Grid>
