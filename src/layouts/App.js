@@ -5,6 +5,8 @@ import { Container, Grid } from "@mui/material";
 
 import Header from "components/Header/Header";
 import Footer from "components/Footer/Footer";
+import ShowTitle from "components/Display/ShowTitle";
+import { mainText } from "views/SourceData/TitleSection";
 import Main from "views/Main/Main";
 import Education from "views/Career/Education";
 import TechStack from "views/Career/TechStack";
@@ -48,6 +50,7 @@ function App() {
           maxWidth="false"
           sx={{ maxWidth: `${containerMaxWidth}px`, py: 2 }}
         >
+          <ShowTitle sourceData={mainText} />
           <Routes>
             <Route path="/main" element={<Main />} />
             <Route path="/stack" element={<TechStack />} />
