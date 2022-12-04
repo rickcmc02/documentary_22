@@ -7,11 +7,11 @@ import Header from "components/Header/Header";
 import Footer from "components/Footer/Footer";
 import ShowTitle from "components/Display/ShowTitle";
 import { mainText } from "views/SourceData/TitleSection";
-import Main from "views/Main/Main";
-import Education from "views/Career/Education";
-import TechStack from "views/Career/TechStack";
-import Experience from "views/Career/Experience";
-import ProjectList from "views/Project/ProjectList";
+import Main from "views/Main";
+import Education from "views/Education";
+import TechStack from "views/TechStack";
+import Experience from "views/Experience";
+import ProjectList from "views/ProjectList";
 
 function App() {
   const headerHeight = 7;

@@ -1,4 +1,4 @@
-import { expSource } from "../SourceData/Experience";
+import { expSource } from "./SourceData/Experience";
 import ShowSource from "components/Display/ShowSource";
 
 import { Grid } from "@mui/material";

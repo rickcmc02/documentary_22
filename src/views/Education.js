@@ -1,4 +1,4 @@
-import { eduSource } from "../SourceData/Education";
+import { eduSource } from "./SourceData/Education";
 import ShowSource from "components/Display/ShowSource";
 
 import { Grid } from "@mui/material";
