@@ -6,12 +6,12 @@ import { Container, Grid } from "@mui/material";
 import Header from "components/Header/Header";
 import Footer from "components/Footer/Footer";
 import ShowTitle from "components/Display/ShowTitle";
-import { mainText } from "views/SourceData/TitleSection";
+import { MAIN_TITLE } from "views/SourceData/Title";
 import Main from "views/Main";
 import Education from "views/Education";
 import TechStack from "views/TechStack";
-import Experience from "views/Experience";
-import ProjectList from "views/ProjectList";
+import Experience from "views/Career";
+import ProjectList from "views/Project";
 
 function App() {
   const headerHeight = 7;
@@ -50,7 +50,7 @@ function App() {
           maxWidth="false"
           sx={{ maxWidth: `${containerMaxWidth}px`, py: 2 }}
         >
-          <ShowTitle sourceData={mainText} />
+          <ShowTitle sourceData={MAIN_TITLE} />
           <Routes>
             <Route path="/main" element={<Main />} />
             <Route path="/stack" element={<TechStack />} />

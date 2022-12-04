@@ -1,7 +1,7 @@
 import TechStack from "views/TechStack";
 import Education from "views/Education";
-import Experience from "views/Experience";
-import ProjectList from "views/ProjectList";
+import Experience from "views/Career";
+import ProjectList from "views/Project";
 
 import { Grid } from "@mui/material";
 

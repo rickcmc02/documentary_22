@@ -3,7 +3,7 @@ import JavascriptLogo from "assets/img/logo/javascript.png";
 import CypressLogo from "assets/img/logo/cypress.webp";
 import MaterialLogo from "assets/img/logo/materialui.png";
 
-export const techSource = [
+export const TECHSTACK_LIST = [
   {
     content: "React",
     detail: "React 기반 비동기 웹 및 모바일 대응 능동형 웹앱 구현",

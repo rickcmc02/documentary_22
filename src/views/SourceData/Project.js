@@ -6,7 +6,7 @@ import RetrieverLogo from "assets/img/logo/retriever_black.png";
 import KykykLogo from "assets/img/logo/kykyk_black.png";
 import RocketLogo from "assets/img/logo/rocket_black.png";
 
-export const projectSource = [
+export const PROJECT_LIST = [
   {
     content: "DS2.ai",
     detail: "인공지능 라벨링, ML Ops 플랫폼 웹 ",

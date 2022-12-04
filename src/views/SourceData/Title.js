@@ -1,4 +1,4 @@
-export const mainText = {
+export const MAIN_TITLE = {
   mainHead: "Generalist,",
   subHead: "Business-friendly Programmer",
   mainDescription: "다양한 경험과 유연한 사고를 가진 개발자",

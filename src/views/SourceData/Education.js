@@ -4,7 +4,7 @@ import OpicLogo from "assets/img/logo/opic.png";
 import MKTestLogo from "assets/img/logo/mktest.png";
 import SamilLogo from "assets/img/logo/samil.png";
 
-export const eduSource = [
+export const EDUCATION_LIST = [
   {
     content: "연세대학교 경영학과",
     detail: "GPA 3.56 / 4.5",

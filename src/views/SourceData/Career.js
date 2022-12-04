@@ -4,7 +4,7 @@ import GlovisLogo from "assets/img/logo/glovis_black.png";
 import JtbcLogo from "assets/img/logo/jtbc_black.png";
 // import SamilLogo from "assets/img/logo/samil.png";
 
-export const expSource = [
+export const CAREER_LIST = [
   {
     content: "DSLABGLOBAL",
     detail: "Front-end engineer",
