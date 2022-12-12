@@ -11,14 +11,15 @@ export const EXPERIENCE_LIST = [
   },
   {
     content: "240km 순례길 종주​",
-    detail: "한겨레 신문 [아름다운 동행], 시작장애인 보조 순례길 종주 봉사",
+    detail:
+      "한겨레 신문 [아름다운 동행] 보도, 시작장애인 보조 순례길 종주 봉사",
     period: "'13.07 ~ '13.07",
     imgSrc: CatholicJeonju,
   },
   {
     content: "Grand to grand 울트라 마라톤",
     detail:
-      "KBS 인간극장 [그랜드캐니언의 두 남자], 체크포인트 자원봉사 및 통역",
+      "KBS 인간극장 [그랜드캐니언의 두 남자] 방송, 체크포인트 자원봉사 및 통역",
     period: "'12.09 ~`12.10",
     imgSrc: Grand2Grand,
   },

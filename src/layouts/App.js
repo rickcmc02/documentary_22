@@ -10,7 +10,7 @@ import { MAIN_TITLE } from "views/SourceData/Title";
 import Main from "views/Main";
 import Education from "views/Education";
 import TechStack from "views/TechStack";
-import Experience from "views/Career";
+import Career from "views/Career";
 import ProjectList from "views/Project";
 
 function App() {
@@ -55,7 +55,7 @@ function App() {
             <Route path="/main" element={<Main />} />
             <Route path="/stack" element={<TechStack />} />
             <Route path="/education" element={<Education />} />
-            <Route path="/experience" element={<Experience />} />
+            <Route path="/career" element={<Career />} />
             <Route path="/project" element={<ProjectList />} />
           </Routes>
         </Container>

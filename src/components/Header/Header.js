@@ -20,7 +20,7 @@ const Header = ({ height, containerMaxWidth, isMobile, isTablet }) => {
 
   const transitionTime = 0.4;
   const navlinkList = [
-    { id: "experience", label: "경력" },
+    { id: "career", label: "경력" },
     { id: "education", label: "학력" },
     { id: "project", label: "프로젝트" },
     { id: "stack", label: "기술" },
