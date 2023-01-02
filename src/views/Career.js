@@ -8,6 +8,7 @@ import { Grid } from "@mui/material";
 
 function Career() {
   const [isCareerPage, setIsCareerPage] = useState(false);
+
   useEffect(() => {
     if (window.location?.pathname && window.location.pathname === "/career")
       setIsCareerPage(true);
