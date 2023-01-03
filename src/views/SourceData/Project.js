@@ -11,7 +11,7 @@ export const PROJECT_LIST = [
     content: "DS2.ai",
     detail: "인공지능 라벨링, ML Ops 플랫폼 웹 ",
     imgSrc: Ds2aiLogo,
-    period: "'21.05 ~",
+    period: "'21.05 ~ `22.10",
     linkUrl: "https://ko.ds2.ai/",
     linkType: "web",
   },
