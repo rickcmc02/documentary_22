@@ -9,6 +9,7 @@ import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 import IdPhoto from "assets/img/profile/id_photo.jpeg";
+import { BorderColor } from "@mui/icons-material";
 
 const Header = ({ height, containerMaxWidth, isMobile, isTablet }) => {
   const page = useSelector((state) => state.page);
@@ -131,6 +132,11 @@ const Header = ({ height, containerMaxWidth, isMobile, isTablet }) => {
                         key={`navBtn_${navlink.id}`}
                         sx={{
                           mx: isMobile ? (isHeaderOpen ? -0.5 : -0.25) : 1,
+                          borderBottom: "3px solid transparent",
+                          borderColor: isPathIncluded
+                            ? "var(--primary8)"
+                            : "transparent",
+                          borderRadius: "4px 4px 0 0",
                         }}
                         onClick={() => {
                           if (isPathIncluded) handleNavTarget("main");
