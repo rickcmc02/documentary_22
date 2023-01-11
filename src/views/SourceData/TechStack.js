@@ -1,4 +1,5 @@
 import ReactLogo from "assets/img/logo/react.png";
+import VueLogo from "assets/img/logo/vue.png";
 import JavascriptLogo from "assets/img/logo/javascript.png";
 import CypressLogo from "assets/img/logo/cypress.webp";
 import MaterialLogo from "assets/img/logo/materialui.png";
@@ -8,6 +9,11 @@ export const TECHSTACK_LIST = [
     content: "React",
     detail: "React 기반 비동기 웹 및 모바일 대응 능동형 웹앱 구현",
     imgSrc: ReactLogo,
+  },
+  {
+    content: "Vue",
+    detail: "Vue 기반 반응형 웹 어드민 페이지 구현",
+    imgSrc: VueLogo,
   },
   {
     content: "React Native",
