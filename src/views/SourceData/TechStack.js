@@ -12,7 +12,7 @@ export const TECHSTACK_LIST = [
   },
   {
     content: "Vue",
-    detail: "Vue 기반 반응형 웹 어드민 페이지 구현",
+    detail: "Vue 기반 반응형 웹 페이지 구현",
     imgSrc: VueLogo,
   },
   {
