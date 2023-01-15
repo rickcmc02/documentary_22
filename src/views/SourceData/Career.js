@@ -7,7 +7,7 @@ export const CAREER_LIST = [
   {
     content: "Mcorporation​",
     detail: "Front-end (Vue) engineer",
-    period: "'23.01 ~ '23.03",
+    period: "'23.01 ~ ",
     imgSrc: MCorpLogo,
   },
   {
