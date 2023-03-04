@@ -5,14 +5,23 @@ import ResemblyLogo from "assets/img/logo/resembly.jpg";
 import RetrieverLogo from "assets/img/logo/retriever_black.png";
 import KykykLogo from "assets/img/logo/kykyk_black.png";
 import RocketLogo from "assets/img/logo/rocket_black.png";
+import PcstoaLogo from "assets/img/logo/pcstoa.png";
 
 export const PROJECT_LIST = [
+  {
+    content: "PCSTOA",
+    detail: "PC 최신 소프트웨어 다운로드 자료실",
+    imgSrc: PcstoaLogo,
+    period: "`23.01 ~ `23.02",
+    linkUrl: "https://pcstoa.com",
+    linkType: "web",
+  },
   {
     content: "DS2.ai",
     detail: "인공지능 라벨링, ML Ops 플랫폼 웹 ",
     imgSrc: Ds2aiLogo,
     period: "'21.05 ~ `22.10",
-    linkUrl: "https://ko.ds2.ai/",
+    linkUrl: "https://ds2.ai/",
     linkType: "web",
   },
   {
