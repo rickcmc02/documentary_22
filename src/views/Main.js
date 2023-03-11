@@ -9,8 +9,8 @@ const Main = () => {
   return (
     <Grid>
       <Experience />
-      <Education />
       <ProjectList />
+      <Education />
       <TechStack />
     </Grid>
   );
