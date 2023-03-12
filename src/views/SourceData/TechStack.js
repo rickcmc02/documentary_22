@@ -5,6 +5,7 @@ import PiniaLogo from "assets/img/logo/pinia.svg";
 import CapacitorLogo from "assets/img/logo/capacitor.png";
 import JavascriptLogo from "assets/img/logo/javascript.png";
 import CypressLogo from "assets/img/logo/cypress.webp";
+import GitLogo from "assets/img/logo/git.png";
 import MaterialLogo from "assets/img/logo/materialui.png";
 
 export const TECHSTACK_LIST = [
@@ -15,6 +16,7 @@ export const TECHSTACK_LIST = [
   },
   {
     content: "Redux",
+    detail: "",
     imgSrc: ReduxLogo,
   },
   {
@@ -30,11 +32,11 @@ export const TECHSTACK_LIST = [
   //   content: "Capacitor",
   //   imgSrc: CapacitorLogo,
   // },
-  {
-    content: "React Native",
-    detail: "React Native 웹 뷰 기반 팬/팔로잉 프로젝트 ",
-    imgSrc: ReactLogo,
-  },
+  // {
+  //   content: "React Native",
+  //   detail: "React Native 웹 뷰 기반 팬/팔로잉 프로젝트 ",
+  //   imgSrc: ReactLogo,
+  // },
   // {
   //   content: "Javascript",
   //   imgSrc: JavascriptLogo,
@@ -43,6 +45,12 @@ export const TECHSTACK_LIST = [
     content: "Cypress",
     detail: "Cypress 기반 테스트 코드 및 코드 커버리지 측정",
     imgSrc: CypressLogo,
+  },
+  {
+    content: "Git",
+    detail:
+      "Git을 통해 local - remote, prod - develop branch 관리 및 merge, issue로 작업 관리",
+    imgSrc: GitLogo,
   },
   {
     content: "Material UI",
