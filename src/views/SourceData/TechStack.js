@@ -3,6 +3,7 @@ import ReduxLogo from "assets/img/logo/redux.png";
 import VueLogo from "assets/img/logo/vue.png";
 import PiniaLogo from "assets/img/logo/pinia.svg";
 import CapacitorLogo from "assets/img/logo/capacitor.png";
+import AngularLogo from "assets/img/logo/angular.png";
 import JavascriptLogo from "assets/img/logo/javascript.png";
 import CypressLogo from "assets/img/logo/cypress.webp";
 import GitLogo from "assets/img/logo/git.png";
@@ -14,11 +15,11 @@ export const TECHSTACK_LIST = [
     detail: "React 기반 비동기 웹 및 모바일 대응 능동형 웹앱 구현",
     imgSrc: ReactLogo,
   },
-  {
-    content: "Redux",
-    detail: "",
-    imgSrc: ReduxLogo,
-  },
+  // {
+  //   content: "Redux",
+  //   detail: "",
+  //   imgSrc: ReduxLogo,
+  // },
   {
     content: "Vue",
     detail: "Vue 기반 반응형 웹 페이지 구현",
@@ -37,6 +38,11 @@ export const TECHSTACK_LIST = [
   //   detail: "React Native 웹 뷰 기반 팬/팔로잉 프로젝트 ",
   //   imgSrc: ReactLogo,
   // },
+  {
+    content: "Angular",
+    detail: "Angular기반 세무서비스 페이지 구현",
+    imgSrc: AngularLogo,
+  },
   // {
   //   content: "Javascript",
   //   imgSrc: JavascriptLogo,

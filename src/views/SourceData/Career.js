@@ -1,3 +1,4 @@
+import SeteukLogo from "assets/img/logo/seteuk.jpg";
 import DslabLogo from "assets/img/logo/dslabglobal.jpeg";
 import MCorpLogo from "assets/img/logo/mcorporation.png";
 import GlovisLogo from "assets/img/logo/glovis_black.png";
@@ -5,9 +6,15 @@ import JtbcLogo from "assets/img/logo/jtbc_black.png";
 
 export const CAREER_LIST = [
   {
+    content: "AIBizon",
+    detail: "Front-end (Angular) engineer",
+    period: "'23.04 ~",
+    imgSrc: SeteukLogo,
+  },
+  {
     content: "Mcorporation​",
     detail: "Front-end (Vue) engineer",
-    period: "'23.01 ~ ",
+    period: "'23.01 ~ '23.04",
     imgSrc: MCorpLogo,
   },
   {
